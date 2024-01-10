@@ -1,34 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaSearch } from "react-icons/fa";
-import blacklogo from "../../assets/Sabhyasha-Vertical-01.png";
+import blacklogo from "../../assets/Sabhyasha-horizontal-01.png";
 import NavSideBar from "../NavSideBar/NavSideBar";
 import { MdOutlineClose } from "react-icons/md";
 const Header = () => {
   const [isSidebar, setSideBar] = useState(false);
-  const [isNavShow,setNavShow] = useState(false);
-
+  const [isNavShow, setNavShow] = useState(false);
 
   return (
     <header className="relative">
-      <nav className="flex bg-white py-6 px-4 md:px-14  items-center justify-between">
-        <div className="flex lg:w-auto w-full gap-12 items-center justify-between">
-          <div className=" flex items-center justify-between w-full">
-            <Link to="/">
-              <img className="w-28" src={blacklogo} alt="" />
+      <nav className="flex bg-white py-4 px-4 md:px-14  items-center justify-between">
+        <div className="flex lg:w-auto w-full gap-4 items-center justify-between">
+          <div className="md:inline  flex items-center justify-between w-full ">
+            <Link className="block w-full" to="/">
+              <img className="h-[92px] object-fill w-[250px]" src={blacklogo} alt="" />
             </Link>
-            <button onClick={() => setNavShow(!isNavShow)} className="md:hidden block">
-              {
-                isNavShow ? 
-          <MdOutlineClose size={26} className="font-bold" />
-          :
-          <FaBars size={26}></FaBars>
-
-              }
+            <button
+              onClick={() => setNavShow(!isNavShow)}
+              className="md:hidden block"
+            >
+              {isNavShow ? (
+                <MdOutlineClose size={26} className="font-bold" />
+              ) : (
+                <FaBars size={26}></FaBars>
+              )}
             </button>
           </div>
 
-          <ul className={`flex md:w-auto w-full md:bg-transparent bg-white md:static absolute md:flex-row duration-300 flex-col md:items-center md:gap-4 gap-2 left-0 md:px-0 px-14 ${isNavShow ? "top-24" : "-top-[500px]"}`}>
+          <ul
+            className={`flex md:w-auto w-full md:bg-transparent bg-white md:static absolute md:flex-row duration-300 flex-col md:items-center md:gap-4 gap-2 left-0 md:px-0 px-14 ${
+              isNavShow ? "top-24" : "-top-[500px]"
+            }`}
+          >
             <li>
               <NavLink
                 className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
@@ -43,7 +47,7 @@ const Header = () => {
                 className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
                 to="/pages"
               >
-                Pages
+                Journey
                 <div className="absolute bottom-0 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
               </NavLink>
             </li>
@@ -52,7 +56,7 @@ const Header = () => {
                 className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
                 to="/donations"
               >
-                Donations
+                Our Vision
                 <div className="absolute bottom-0 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
               </NavLink>
             </li>
@@ -61,16 +65,16 @@ const Header = () => {
                 className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
                 to="/events"
               >
-                Events
+                Solution
                 <div className="absolute bottom-0 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
+                className="text-[#6D432F] font-anton font-extrabold leading-7 text-xl relative group"
                 to="/blog"
               >
-                Blog
+                Artisan’s Wizard
                 <div className="absolute bottom-0 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
               </NavLink>
             </li>
@@ -83,32 +87,19 @@ const Header = () => {
                 <div className="absolute bottom-0 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
-                to="/portfolio"
-              >
-                Portfolio
-                <div className="absolute bottom-0 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
-              </NavLink>
-            </li>
           </ul>
         </div>
         <ul className="lg:flex hidden items-center gap-6">
+         
           <li>
-            <button>
-              <FaSearch />
-            </button>
-          </li>
-          <li>
-            <Link className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group">
-              Donate Now
-              <div className="absolute -bottom-2 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
-            </Link>
+            
           </li>
           <li>
             <button onClick={() => setSideBar(!isSidebar)}>
-              <FaBars size={26} />
+            <Link className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group">
+              Contact Us
+              <div className="absolute -bottom-2 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
+            </Link>
             </button>
           </li>
         </ul>

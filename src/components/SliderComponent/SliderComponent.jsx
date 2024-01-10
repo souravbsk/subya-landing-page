@@ -8,7 +8,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 import { Link } from "react-router-dom";
 import AOS from "aos";
-const SliderComponent = ({bgimge1,bgimge2,bgimge3}) => {
+const SliderComponent = ({bgimge1,bgimge2,bgimge3,bgimge4}) => {
     const swiperRef = useRef(null);
     const [index,setIndex] = useState(null)
     const handleSlideChange = (i) => {
@@ -29,30 +29,24 @@ const SliderComponent = ({bgimge1,bgimge2,bgimge3}) => {
           }}
           pagination={true}
           modules={[Pagination, Autoplay]}
-          className="mySwiper"
+          className="mySwiper h-full"
         >
           <SwiperSlide>
             <div
-              style={{ backgroundImage: `url(${bgimge1})` }}
-              className="md:px-14 px-4 flex items-center justify-center h-screen bg-current bg-no-repeat bg-cover py-9"
+              style={{ backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge1})` }}
+              className="md:px-14 px-4 flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
             >
               <div className=" space-y-3 md:space-y-5">
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  className="text-xs  font-heebo font-normal leading-7 text-white"
-                >
-                  12 april 2023 / Ecology
-                </p>
+         
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="capitalize text-white font-anton  font-extrabold text-4xl md:text-6xl  "
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
                 >
-                  Join The Action On white river
+                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
                 </h2>
                 <div data-aos="fade-up" data-aos-duration="3000">
-                  <Link className="capitalize text-white font-extrabold text-2xl font-anton underline ">
+                  <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
                     Read More
                   </Link>
                 </div>{" "}
@@ -61,26 +55,20 @@ const SliderComponent = ({bgimge1,bgimge2,bgimge3}) => {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              style={{ backgroundImage: `url(${bgimge2})` }}
-              className="md:px-14 px-4 flex items-center justify-center h-screen bg-current bg-no-repeat bg-cover py-9"
+              style={{ backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge2})` }}
+              className="md:px-14 px-4 flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
             >
               <div className=" space-y-3 md:space-y-5">
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  className="text-xs  font-heebo font-normal leading-7 text-white"
-                >
-                  12 april 2023 / Ecology
-                </p>
+         
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="capitalize text-white font-anton  font-extrabold text-4xl md:text-6xl  "
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
                 >
-                  Join The Action On white river
+                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
                 </h2>
                 <div data-aos="fade-up" data-aos-duration="3000">
-                  <Link className="capitalize text-white font-extrabold text-2xl font-anton underline ">
+                  <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
                     Read More
                   </Link>
                 </div>{" "}
@@ -89,26 +77,42 @@ const SliderComponent = ({bgimge1,bgimge2,bgimge3}) => {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              style={{ backgroundImage: `url(${bgimge3})` }}
-              className="md:px-14 px-4 flex items-center justify-center h-screen bg-current bg-no-repeat bg-cover py-9"
+              style={{ backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge3})` }}
+              className="md:px-14 px-4 flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
             >
               <div className=" space-y-3 md:space-y-5">
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  className="text-xs  font-heebo font-normal leading-7 text-white"
-                >
-                  12 april 2023 / Ecology
-                </p>
+         
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="capitalize text-white font-anton  font-extrabold text-4xl md:text-6xl  "
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
                 >
-                  Join The Action On white river
+                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
                 </h2>
                 <div data-aos="fade-up" data-aos-duration="3000">
-                  <Link className="capitalize text-white font-extrabold text-2xl font-anton underline ">
+                  <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
+                    Read More
+                  </Link>
+                </div>{" "}
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              style={{ backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge4})` }}
+              className="md:px-14 px-4 flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
+            >
+              <div className=" space-y-3 md:space-y-5">
+         
+                <h2
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
+                >
+                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
+                </h2>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
                     Read More
                   </Link>
                 </div>{" "}

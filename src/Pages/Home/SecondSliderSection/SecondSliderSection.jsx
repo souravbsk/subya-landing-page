@@ -7,14 +7,14 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import GoalSave from "./GoalSave";
 const SecondSliderSection = () => {
-    const [key, setKey] = useState(0);
-    const percentage = 63;
-  
-    useEffect(() => {
-      // Increment the key to remount the CircularProgressbar
-      setKey(prevKey => prevKey + 1);
-    }, []);
-  
+  const [key, setKey] = useState(0);
+  const percentage = 63;
+
+  useEffect(() => {
+    // Increment the key to remount the CircularProgressbar
+    setKey((prevKey) => prevKey + 1);
+  }, []);
+
   return (
     <div className="flex flex-col lg:flex-row justify-between">
       <div className="lg:w-1/2 w-full ">
@@ -24,12 +24,26 @@ const SecondSliderSection = () => {
           </div>
           <div className=" space-y-4 flex-1 ">
             <div className="py-16  px-8 md:px-20 space-y-3">
-              <CircularProgressbar
+              {/* <CircularProgressbar
               key={key}
                 value={percentage}
                 text={`${percentage}%`}
                 animate={true} // Enable animation conditionally
-              />
+              /> */}
+
+              <div class="progress">
+                <span
+                  class="title timer"
+                  data-from="0"
+                  data-to="63"
+                  data-speed="1500"
+                >
+                  63
+                </span>
+                <div class="overlay"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
 
               <h3 className="text-2xl text-center font-semibold text-[#303030] font-heebo">
                 Our objective

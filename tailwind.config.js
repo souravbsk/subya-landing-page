@@ -6,8 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'heebo': ['Heebo', "sans-serif"],
-      "anton": ['Anton', "sans-serif"]
+      'heebo': ['Oswald', "sans-serif"],
+      "anton": ['Oswald', "sans-serif"]
     },
   },
   plugins: [require("daisyui")],

@@ -14,7 +14,7 @@ const Main = () => {
     <div className="bg-[#F6F6F6]">
       <Header></Header>
       <Outlet></Outlet>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
       <ScrollToTop 
       className="!rounded-full flex items-center justify-center !bg-[#F0E8F8]"
       viewBox="0 0 24 24"
