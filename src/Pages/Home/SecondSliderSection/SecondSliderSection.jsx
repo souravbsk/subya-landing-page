@@ -1,26 +1,19 @@
 import React, { useEffect, useState } from "react";
 import icon from "../../../assets/h2-icon1.png";
 import { Link } from "react-router-dom";
-import bannerImg from "../../../assets/imgslider2.jpg";
+import bannerImg from "../../../assets/second-section/left-img.jpeg";
 import RightSlider from "./RightSlider";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import GoalSave from "./GoalSave";
 const SecondSliderSection = () => {
-  const [key, setKey] = useState(0);
-  const percentage = 63;
-
-  useEffect(() => {
-    // Increment the key to remount the CircularProgressbar
-    setKey((prevKey) => prevKey + 1);
-  }, []);
 
   return (
     <div className="flex flex-col lg:flex-row justify-between">
       <div className="lg:w-1/2 w-full ">
         <div className="w-full flex flex-col md:flex-row">
           <div className=" flex-1">
-            <img src={bannerImg} className="w-full h-[388px]" alt="" />
+            <img src={bannerImg} className="w-full object-cover object-left h-[388px]" alt="" />
           </div>
           <div className=" space-y-4 flex-1 ">
             <div className="py-16  px-8 md:px-20 space-y-3">

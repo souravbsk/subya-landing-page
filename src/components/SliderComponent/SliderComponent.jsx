@@ -41,9 +41,9 @@ const SliderComponent = ({bgimge1,bgimge2,bgimge3,bgimge4}) => {
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-8xl  "
                 >
-                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
+                  Unlocking <br /> e-commerce for artisans with <span className="font-extrabold">ONDC</span>
                 </h2>
                 <div data-aos="fade-up" data-aos-duration="3000">
                   <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
@@ -63,9 +63,9 @@ const SliderComponent = ({bgimge1,bgimge2,bgimge3,bgimge4}) => {
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-8xl  "
                 >
-                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
+                  Unlocking <br /> e-commerce for artisans with <span className="font-extrabold">ONDC</span>
                 </h2>
                 <div data-aos="fade-up" data-aos-duration="3000">
                   <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
@@ -85,9 +85,9 @@ const SliderComponent = ({bgimge1,bgimge2,bgimge3,bgimge4}) => {
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-8xl  "
                 >
-                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
+                  Unlocking <br /> e-commerce for artisans with <span className="font-extrabold">ONDC</span>
                 </h2>
                 <div data-aos="fade-up" data-aos-duration="3000">
                   <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
@@ -107,9 +107,9 @@ const SliderComponent = ({bgimge1,bgimge2,bgimge3,bgimge4}) => {
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-5xl  "
+                  className="capitalize text-white font-anton  font-semibold text-3xl md:text-8xl  "
                 >
-                  Unlocking e-commerce for artisans with <span className="font-extrabold">ONDC</span>
+                  Unlocking <br /> e-commerce for artisans with <span className="font-extrabold">ONDC</span>
                 </h2>
                 <div data-aos="fade-up" data-aos-duration="3000">
                   <Link className="capitalize text-white font-bold text-2xl font-anton underline ">

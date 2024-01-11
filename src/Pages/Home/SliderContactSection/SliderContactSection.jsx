@@ -1,6 +1,6 @@
 import React from "react";
 import BannerSlider from "./BannerSlider";
-import icon from "../../../assets/h2-icon1.png";
+import icon from "../../../assets/first-section/icon-img.png";
 import { Link } from "react-router-dom";
 import bannerImg from "../../../assets/imgslider2.jpg";
 import bgimage from "../../../assets/first-section/bg.jpeg";
@@ -12,16 +12,15 @@ const SliderContactSection = () => {
       </div>
       <div className="lg:w-1/2 bg-[#FFE2DA]  w-full ">
         <div className="w-full flex flex-col md:flex-row">
-          <div className=" space-y-4 bg-[#F6F6F6] flex-1 ">
+          <div className=" space-y-4 flex-1 bg-[#F6F6F6]  ">
             <div className="py-16  px-8 md:px-16 space-y-3">
-              <img src={icon} alt="" />
-              <h3 className="text-2xl font-extrabold text-[#303030] font-heebo">
+              <img src={icon} className="h-28" alt="" />
+              <h3 className="text-4xl font-extrabold text-[#303030] font-heebo">
                 Join the movement
               </h3>
-              <p className="text-base text-[#303030] font-heebo"></p>
-
+              
               <div>
-                <Link className="uppercase text-lg underline text-[#303030] font-extrabold">
+                <Link className="uppercase text-4xl underline text-[#303030] font-extrabold">
                   How ?
                 </Link>
               </div>

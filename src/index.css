@@ -16,6 +16,9 @@ body {
   /* font-family: 'Anton', sans-serif; */
 
 }
+.container {
+  @apply mx-auto px-3 md:max-w-[992px] lg:max-w-[1320px]
+}
 
 .active {
   position: relative;
@@ -41,7 +44,7 @@ body {
   transform: scaleX(1);
 }
 
-
+/* 
 .CircularProgressbar .CircularProgressbar-path {
   stroke: #000000 !important;
   stroke-width: 2;
@@ -54,7 +57,7 @@ body {
 
 .CircularProgressbar .CircularProgressbar-text {
   fill: #000000 !important;
-}
+} */
 
 
 

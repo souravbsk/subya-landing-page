@@ -14,7 +14,7 @@ const Header = () => {
         <div className="flex lg:w-auto w-full gap-4 items-center justify-between">
           <div className="md:inline  flex items-center justify-between w-full ">
             <Link className="block w-full" to="/">
-              <img className="h-[92px] object-fill w-[250px]" src={blacklogo} alt="" />
+              <img className="h-[76px] w-[207px]" src={blacklogo} alt="" />
             </Link>
             <button
               onClick={() => setNavShow(!isNavShow)}
@@ -35,7 +35,7 @@ const Header = () => {
           >
             <li>
               <NavLink
-                className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
+                className="text-[#303030] font-anton font-extrabold leading-7 text-base relative group"
                 to="/"
               >
                 Home
@@ -44,7 +44,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
+                className="text-[#303030] font-anton font-extrabold leading-7 text-base relative group"
                 to="/pages"
               >
                 Journey
@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
+                className="text-[#303030] font-anton font-extrabold leading-7 text-base relative group"
                 to="/donations"
               >
                 Our Vision
@@ -62,7 +62,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
+                className="text-[#303030] font-anton font-extrabold leading-7 text-base relative group"
                 to="/events"
               >
                 Solution
@@ -71,7 +71,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#6D432F] font-anton font-extrabold leading-7 text-xl relative group"
+                className="text-[#6D432F] font-anton font-extrabold leading-7 text-base relative group"
                 to="/blog"
               >
                 Artisan’s Wizard
@@ -80,7 +80,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group"
+                className="text-[#303030] font-anton font-extrabold leading-7 text-base relative group"
                 to="/shop"
               >
                 Shop
@@ -90,16 +90,16 @@ const Header = () => {
           </ul>
         </div>
         <ul className="lg:flex hidden items-center gap-6">
-         
+          <li></li>
           <li>
-            
-          </li>
-          <li>
-            <button onClick={() => setSideBar(!isSidebar)}>
-            <Link className="text-[#303030] font-anton font-extrabold leading-7 text-xl relative group">
-              Contact Us
-              <div className="absolute -bottom-2 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
-            </Link>
+            <button
+              className="text-[#303030] font-anton font-extrabold leading-7 text-base relative group"
+              onClick={() => setSideBar(!isSidebar)}
+            >
+              <>
+                Contact Us
+                <div className="absolute -bottom-2 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
+              </>
             </button>
           </li>
         </ul>
