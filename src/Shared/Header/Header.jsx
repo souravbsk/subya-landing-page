@@ -45,7 +45,7 @@ const Header = () => {
             <li>
               <NavLink
                 className="text-[#303030] font-anton font-extrabold leading-7 text-base relative group"
-                to="/pages"
+                to="#journey"
               >
                 Journey
                 <div className="absolute bottom-0 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>

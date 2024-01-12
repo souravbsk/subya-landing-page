@@ -9,7 +9,7 @@ import GoalSave from "./GoalSave";
 const SecondSliderSection = () => {
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between">
+    <div id="journey" className="flex flex-col lg:flex-row justify-between">
       <div className="lg:w-[70%] w-full ">
         <div className="w-full flex flex-col md:flex-row">
           <div className=" flex-1">

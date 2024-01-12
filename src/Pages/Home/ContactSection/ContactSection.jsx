@@ -19,7 +19,7 @@ const ContactSection = () => {
               <FaQuoteLeft className="text-[#7A5542]" size={36} />
             </div>
             <h2 className="text-[#303030] font-extrabold font-anton leading-tight text-3xl mb-4">
-              Vision + Mission
+            Our Vision & Mission
             </h2>
             <p>
               In every artisan’s smile, in every crafted masterpiece, we see the
