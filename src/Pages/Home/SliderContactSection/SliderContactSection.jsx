@@ -7,27 +7,23 @@ import bgimage from "../../../assets/first-section/bg.jpeg";
 const SliderContactSection = () => {
   return (
     <div className="flex flex-col bg-red-400 lg:flex-row justify-between">
-      <div className="lg:w-1/2 w-full ">
+      <div className="lg:w-[70%] w-full ">
         <BannerSlider></BannerSlider>
       </div>
       <div className="lg:w-1/2 bg-[#FFE2DA]  w-full ">
         <div className="w-full flex flex-col md:flex-row">
           <div className=" space-y-4 flex-1 bg-[#F6F6F6]  ">
-            <div className="py-16  px-8 md:px-16 space-y-3">
-              <img src={icon} className="h-28" alt="" />
-              <h3 className="text-4xl font-extrabold text-[#303030] font-heebo">
-                Join the movement
-              </h3>
-              
-              <div>
-                <Link className="uppercase text-4xl underline text-[#303030] font-extrabold">
+            <div className="py-16 flex flex-col justify-center items-center  px-8 md:px-16 space-y-3">
+              <figure>
+                <img src={icon} className="h-28" alt="" />
+              </figure>
+              <h3 className="text-3xl font-extrabold text-[#303030] font-heebo">
+                Join the movement <br />{" "}
+                <Link className="uppercase underline text-[#303030] font-extrabold">
                   How ?
                 </Link>
-              </div>
+              </h3>
             </div>
-          </div>
-          <div className=" flex-1">
-            <img src={bannerImg} className="w-full h-[390px]" alt="" />
           </div>
         </div>
         <div
@@ -36,11 +32,9 @@ const SliderContactSection = () => {
           }}
           className="w-full bg-cover bg-center h-[350px] flex items-center justify-center"
         >
-          <h2
-            className="font-semibold text-white text-2xl md:text-5xl font-anton"
-          >
+          <h2 className="font-semibold text-white text-2xl md:text-4xl font-anton">
             Support the cause <br />{" "}
-            <span className="text-3xl font-extrabold md:text-6xl">NOW</span>
+            <span className="font-extrabold md:text-6xl">NOW</span>
           </h2>
         </div>
       </div>

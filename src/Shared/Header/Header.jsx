@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaSearch } from "react-icons/fa";
-import blacklogo from "../../assets/Sabhyasha-horizontal-01.png";
+import blacklogo from "../../assets/shabasa-logo.svg";
 import NavSideBar from "../NavSideBar/NavSideBar";
 import { MdOutlineClose } from "react-icons/md";
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
         <div className="flex lg:w-auto w-full gap-4 items-center justify-between">
           <div className="md:inline  flex items-center justify-between w-full ">
             <Link className="block w-full" to="/">
-              <img className="h-[76px] w-[207px]" src={blacklogo} alt="" />
+              <img className="h-[68.73px]  w-[187.5px]" src={blacklogo} alt="" />
             </Link>
             <button
               onClick={() => setNavShow(!isNavShow)}

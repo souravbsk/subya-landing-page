@@ -10,7 +10,7 @@ const Home = () => {
         <SliderContactSection></SliderContactSection>
         <SecondSliderSection></SecondSliderSection>
         <ContactSection></ContactSection>
-        {/* <NoticeSlider></NoticeSlider> */}
+        <NoticeSlider></NoticeSlider>
        </div>
     );
 };

@@ -2,8 +2,8 @@ import React from "react";
 
 const Contactfrom = () => {
   return (
-    <div className="px-8 md:px-32 py-9 md:py-32 space-y-5 bg-[#F6F6F6]">
-      <h2 className="uppercase font-extrabold font-anton text-3xl md:text-[65px] text-[#9b8db7]">
+    <div className="px-6 py-9 md:py-20 space-y-5 bg-[#F6F6F6]">
+      <h2 className="uppercase font-extrabold font-anton text-3xl  text-[#9b8db7]">
         Contact us
       </h2>
       <p className="font-heebo text-base text-[#303030]">

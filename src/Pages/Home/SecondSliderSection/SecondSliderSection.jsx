@@ -10,13 +10,13 @@ const SecondSliderSection = () => {
 
   return (
     <div className="flex flex-col lg:flex-row justify-between">
-      <div className="lg:w-1/2 w-full ">
+      <div className="lg:w-[70%] w-full ">
         <div className="w-full flex flex-col md:flex-row">
           <div className=" flex-1">
             <img src={bannerImg} className="w-full object-cover object-left h-[388px]" alt="" />
           </div>
           <div className=" space-y-4 flex-1 ">
-            <div className="py-16  px-8 md:px-20 space-y-3">
+            <div className="py-10 flex flex-col items-center justify-center  px-8 md:px-20 space-y-3">
               {/* <CircularProgressbar
               key={key}
                 value={percentage}
@@ -38,15 +38,15 @@ const SecondSliderSection = () => {
                 <div class="right"></div>
               </div>
 
-              <h3 className="text-2xl text-center font-semibold text-[#303030] font-heebo">
-                Our objective
+              <h3 className="text-3xl text-center font-extrabold text-[#303030] font-heebo">
+                Our Objective
               </h3>
             </div>
           </div>
         </div>
         <GoalSave></GoalSave>
       </div>
-      <div className="lg:w-1/2 w-full ">
+      <div className="lg:w-[30%] w-full ">
         <RightSlider></RightSlider>
       </div>
     </div>

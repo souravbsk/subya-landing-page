@@ -6,7 +6,7 @@ const GoalSave = () => {
     <div className="px-4 md:px-20 bg-white  py-12">
       <div className="space-y-4">
         <h2 className="text-[#303030] font-extrabold font-anton leading-tight text-3xl md:text-5xl">
-          Our journey
+          Our Journey
         </h2>
         <p className="font-heebo text-[#303030] text-base">
           Sabhyahsa, started in 2020 to unravel the Best Kept Secrets of

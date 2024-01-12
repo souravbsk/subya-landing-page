@@ -126,3 +126,11 @@ body {
   100% {
       z-index: 100;transform: rotate(315deg);}
 }
+
+
+
+.peraBg{
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.952), rgba(255, 255, 255, 0.925)),url("./assets/contentImage/pera.webp");
+  
+}
