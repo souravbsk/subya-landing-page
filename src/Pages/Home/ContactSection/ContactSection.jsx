@@ -12,14 +12,13 @@ const ContactSection = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-between">
       <div className="lg:w-[70%] w-full ">
-        {/* <img src={contactbanner} className='md:h-[460px] w-full' alt="" /> */}
         <div className="p-20  bg-[#7A5542]">
           <div className=" text-center relative bg-white px-20 py-20 rounded-3xl">
             <div className="absolute top-14">
               <FaQuoteLeft className="text-[#7A5542]" size={36} />
             </div>
-            <h2 className="text-[#303030] font-extrabold font-anton leading-tight text-3xl mb-4">
-            Our Vision & Mission
+            <h2 className="text-[#303030] font-extrabold font-anton  text-3xl mb-7">
+            Our Mission & Vision
             </h2>
             <p>
               In every artisan’s smile, in every crafted masterpiece, we see the

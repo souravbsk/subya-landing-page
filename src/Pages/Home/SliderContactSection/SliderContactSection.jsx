@@ -2,7 +2,6 @@ import React from "react";
 import BannerSlider from "./BannerSlider";
 import icon from "../../../assets/first-section/icon-img.png";
 import { Link } from "react-router-dom";
-import bannerImg from "../../../assets/imgslider2.jpg";
 import bgimage from "../../../assets/first-section/bg.jpeg";
 const SliderContactSection = () => {
   return (
