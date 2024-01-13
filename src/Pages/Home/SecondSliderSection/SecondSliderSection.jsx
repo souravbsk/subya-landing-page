@@ -34,7 +34,6 @@ const SecondSliderSection = () => {
           </div>
           <div className=" space-y-4 flex-1 ">
             <div className="py-10 flex  flex-col h-full items-center justify-center  px-8 md:px-20 space-y-6">
-            
               <div className="w-2/4 mx-auto">
                 <CircularProgressbar
                   value={counter}
@@ -46,9 +45,15 @@ const SecondSliderSection = () => {
                 />
               </div>
 
-              <h3 className="text-3xl  text-center font-extrabold text-[#303030] font-heebo">
-                Our Objective
-              </h3>
+              <div className="">
+                <h3 className="text-3xl mb-4 text-center font-extrabold text-[#303030] font-heebo">
+                  Our Objective
+                </h3>
+                <p className="font-heebo px-10 text-center text-[#303030] text-base">
+                  Make India the world leader in artisanal products by{" "}
+                  <strong>2025</strong>
+                </p>
+              </div>
             </div>
           </div>
         </div>
