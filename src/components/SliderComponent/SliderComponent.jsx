@@ -15,9 +15,9 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
     setIndex(i.activeIndex);
   };
 
-  useEffect(() => {
-    AOS.refresh();
-  }, [index]);
+
+  // linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)),
+
   return (
     <>
       <Swiper
@@ -67,7 +67,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
           <div>
             <h2
               data-aos="fade-up"
-              className="capitalize text-white font-anton  font-semibold text-3xl md:text-7xl  "
+              className="capitalize mb-3 text-white font-anton  font-semibold text-3xl md:text-7xl  "
             >
               Unlocking e-commerce for artisans with <br />
               <span className="font-extrabold">ONDC</span>
