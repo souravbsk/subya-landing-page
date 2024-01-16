@@ -11,13 +11,13 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 const ContactSection = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-between">
-      <div className="lg:w-[70%] w-full ">
-        <div className="p-20  bg-[#7A5542]">
-          <div className=" text-center relative bg-white px-20 py-20 rounded-3xl">
-            <div className="absolute top-14">
-              <FaQuoteLeft className="text-[#7A5542]" size={36} />
+      <div className=" w-full ">
+        <div className="p-4 md:p-20  bg-[#7A5542]">
+          <div className=" text-center relative bg-white p-8 md:py-20 md:px-44 rounded-3xl">
+            <div className="absolute top-8 left-3 md:top-14 md:left-28 opacity-50 text-xl md:text-4xl ">
+              <FaQuoteLeft className="text-[#7A5542]" />
             </div>
-            <h2 className="text-[#303030] font-extrabold font-anton  text-3xl mb-7">
+            <h2 className="text-[#303030] font-extrabold font-anton  text-xl md:text-3xl mb-3 md:mb-7">
             Our Mission & Vision
             </h2>
             <p>
@@ -26,7 +26,7 @@ const ContactSection = () => {
               India’s vast artistic landscape is brought into the limelight,
               celebrated, and cherished by the world.
             </p>
-            <div className="mt-10">
+            <div className=" mt-4 md:mt-10">
               <button className="bg-[#7A5542] px-5 pt-2 pb-3">
                 <Link
                   to="/our-mission"
@@ -36,26 +36,15 @@ const ContactSection = () => {
                 </Link>
               </button>
             </div>
-            <div className="absolute bottom-14 right-28">
-            <FaQuoteRight className="text-[#7A5542]" size={36} />
+            <div className="absolute bottom-8 md:bottom-14 right-3 md:right-28 opacity-50 text-xl md:text-4xl">
+            <FaQuoteRight className="text-[#7A5542] "  />
             </div>
           </div>
         </div>
 
-        <div className="w-full flex flex-col-reverse md:flex-row">
-          <div className=" flex-1">
-            <img src={bannerImg} className="w-full h-72 md:h-[390px]" alt="" />
-          </div>
-          <div className=" flex-1 ">
-            <div className="py-16 flex bg-white h-full items-center justify-center  px-8 md:px-20">
-              <SocialLink></SocialLink>
-            </div>
-          </div>
-        </div>
+    
       </div>
-      <div className="lg:w-[30%] flex items-center justify-center w-full ">
-        <Contactfrom></Contactfrom>
-      </div>
+      
     </div>
   );
 };

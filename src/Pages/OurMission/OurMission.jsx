@@ -5,7 +5,7 @@ import OurMissionContent from './OurMissionContent';
 const OurMission = () => {
     return (
         <div>
-            <OurMissionHeroSection></OurMissionHeroSection>
+            {/* <OurMissionHeroSection></OurMissionHeroSection> */}
             <OurMissionContent></OurMissionContent>
         </div>
     );

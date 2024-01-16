@@ -29,7 +29,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
         }}
         pagination={true}
         modules={[Pagination, Autoplay]}
-        className="mySwiper relative h-full"
+        className="mySwiper relative h-72 md:h-full"
       >
         <SwiperSlide>
           <div
@@ -67,13 +67,13 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
           <div>
             <h2
               data-aos="fade-up"
-              className="capitalize mb-3 text-white font-anton  font-semibold text-3xl md:text-7xl  "
+              className="capitalize mb-3 text-white font-anton  font-semibold text-xl md:text-7xl  "
             >
-              Unlocking e-commerce for artisans with <br />
+              Unlocking e-commerce <br /> for artisans with <br />
               <span className="font-extrabold">ONDC</span>
             </h2>
             <div>
-              <Link className="capitalize text-white font-bold text-2xl font-anton underline ">
+              <Link className="capitalize text-white font-bold md:text-2xl font-anton underline ">
                 Read More
               </Link>
             </div>{" "}
