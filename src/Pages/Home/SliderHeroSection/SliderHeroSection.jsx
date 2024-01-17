@@ -3,7 +3,7 @@ import BannerSlider from "./BannerSlider";
 import icon from "../../../assets/first-section/icon-img.png";
 import { Link } from "react-router-dom";
 import bgimage from "../../../assets/first-section/bg.jpeg";
-const SliderContactSection = () => {
+const SliderHeroSection = () => {
   return (
     <div className="flex flex-col bg-red-400 lg:flex-row justify-between">
       <div className="lg:w-[70%] w-full ">
@@ -43,4 +43,4 @@ const SliderContactSection = () => {
   );
 };
 
-export default SliderContactSection;
+export default SliderHeroSection;

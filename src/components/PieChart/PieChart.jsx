@@ -25,15 +25,15 @@ const PieChart = ({ angle, draw }) => {
 
   const options = {
     responsive: true,
-    maintainAspectRatio: false, // Set to false for responsiveness
-    aspectRatio: 1, // Control the aspect ratio (width/height)
+    maintainAspectRatio: false,
+    aspectRatio: 1,
     plugins: {
       datalabels: {
         anchor: "center",
         align: "end",
         offset: 5,
         font: {
-          size: 15,
+          size: 0,
           weight: "bold",
         },
         color: "#ffffff",
@@ -47,6 +47,14 @@ const PieChart = ({ angle, draw }) => {
       legend: {
         display: false,
       },
+      tooltips: {
+        enabled: false, // Disable tooltips
+      },
+      tooltips: {
+        callbacks: {
+           title: function() {}
+        }
+     },
     },
   };
   return (

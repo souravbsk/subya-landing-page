@@ -1,18 +1,22 @@
 import React from 'react';
-import SliderContactSection from './SliderContactSection/SliderContactSection';
-import SecondSliderSection from './SecondSliderSection/SecondSliderSection';
-import ContactSection from './ContactSection/ContactSection';
+import SliderHeroSection from './SliderHeroSection/SliderHeroSection';
+import PieChartSection from './PieChartSection/PieChartSection';
+import MissionVissionSection from './MissionVissionSection/MissionVissionSection';
 import NoticeSlider from './NoticeSlider/NoticeSlider';
 import SolutionSection from './SolutionSection/SolutionSection';
+import StoreSection from './StoreSection/StoreSection';
+import BlogSection from './BlogSection/BlogSection';
 
 const Home = () => {
     return (
        <div>
-        <SliderContactSection></SliderContactSection>
-        <SecondSliderSection></SecondSliderSection>
-        <ContactSection></ContactSection>
+        <SliderHeroSection></SliderHeroSection>
+        <PieChartSection></PieChartSection>
+        <MissionVissionSection></MissionVissionSection>
         <NoticeSlider></NoticeSlider>
         <SolutionSection></SolutionSection>
+        <StoreSection></StoreSection>
+        <BlogSection></BlogSection>
        </div>
     );
 };
