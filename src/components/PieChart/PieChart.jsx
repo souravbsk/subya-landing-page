@@ -4,8 +4,8 @@ import { Pie } from "react-chartjs-2";
 import datalabels from "chartjs-plugin-datalabels";
 ChartJS.register(ArcElement, Tooltip, Legend, datalabels);
 const items = [
-  { itemName: "Service", itemValue: 2, color: "#00000" },
-  { itemName: "Product", itemValue: 99, color: "#7A5542" },
+  { itemName: "Service", itemValue: 2, color: "#7A5542" },
+  { itemName: "Product", itemValue: 99, color: "#ffffff" },
 ];
 
 const PieChart = ({ angle, draw }) => {
@@ -59,6 +59,8 @@ const PieChart = ({ angle, draw }) => {
   };
   return (
     <div
+    data-aos="zoom-in"
+                  data-aos-duration="3000"
       style={{
         overflow: "visible",
         width: "100%",

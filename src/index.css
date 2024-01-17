@@ -134,3 +134,23 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.952), rgba(255, 255, 255, 0.925)),url("./assets/contentImage/pera.webp");
   
 }
+
+@keyframes gapTextAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(150px);
+  }
+}
+
+.gap-text-animation {
+  animation: gapTextAnimation 3s ease-in-out forwards;
+  animation-delay: 500ms;
+}
+
+
+.piechart canvas{
+  height: 200px !important;
+}
