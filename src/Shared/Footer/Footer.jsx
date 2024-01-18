@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerLogo from "../../assets/Sabhyasha-horizontal-01.png";
+import startuplogo from "../../assets/footer/startuplogo.png";
 const Footer = () => {
   return (
     <footer className="bg-white py-16">
-      <div className="container grid grid-cols-4">
+      <div className="container grid grid-cols-4 gap-8">
         <div>
-          <h3 className="text-2xl mb-[30px] text-[#272626] font-bold">Who We Are</h3>
+          <h3 className="text-2xl mb-[30px] text-[#272626] font-bold">
+            Who We Are
+          </h3>
           <p>
             Sabhyasha Retail Tech Pvt. Ltd. 506, G Block, Utkal Vatika Jharpada
             Canal Road, Bhubaneswar – 751006 +91-8926273115 care@sabhyasha.com
@@ -23,11 +25,11 @@ const Footer = () => {
           </p>
         </div>
         <div>
-        <h3 className="text-2xl mb-[30px] text-[#272626] font-bold">
+          <h3 className="text-2xl mb-[30px] text-[#272626] font-bold">
             Find Out What We Have
           </h3>
           <figure>
-            <img src="" alt="" />
+            <img className="w-full h-full" src={startuplogo} alt="" />
           </figure>
         </div>
       </div>

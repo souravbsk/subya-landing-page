@@ -14,12 +14,12 @@ const SliderHeroSection = () => {
           <div className=" space-y-4 flex-1 bg-[#F6F6F6]  ">
             <div className="py-6 md:py-16 flex flex-col justify-center items-center  px-4 md:px-16 space-y-3">
               <figure>
-                <img src={icon} className=" h-16 md:h-28" alt="" />
+                <img src={icon} className=" h-16 md:h-24" alt="" />
               </figure>
-              <h3 className=" md:text-3xl text-center md:text-left font-extrabold text-[#303030] font-heebo">
+              <h3 className="  md:text-3xl font-anton text-center md:text-left font-extrabold text-[#303030]">
                 Join the movement <br />{" "}
-                <Link className="uppercase underline text-[#303030] font-extrabold">
-                  How ?
+                <Link className="font-extrabold md:text-6xl underline">
+                  How?
                 </Link>
               </h3>
             </div>

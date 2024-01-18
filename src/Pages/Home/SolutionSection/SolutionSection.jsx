@@ -1,32 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import solutionImg from "../../../assets/our-solution/Artisans'_Wizard.png"
+import solutionImg from "../../../assets/our-solution/Artisans'_Wizard.png";
 import SolutionPPtContent from "./SolutionPPtContent";
 import Button from "../../../components/Button/Button";
 const SolutionSection = () => {
   return (
-    <div id="journey" className="flex  bg-white items-center flex-col lg:flex-row justify-between">
+    <div
+      id="journey"
+      className="flex  bg-white items-center flex-col lg:flex-row justify-between"
+    >
       <div className="md:w-[50%] w-full">
-        <div className="px-4 md:px-20   py-12">
-          <div className="space-y-4">
-            <h2 className="text-[#303030] font-extrabold font-anton leading-tight text-3xl md:text-5xl">
-             The Solution ?
+        <div className="px-4 md:pl-48 md:pr-16  py-12  ">
+          
+            <h2 className="text-[#303030] mb-6 font-medium text-center font-anton leading-tight text-4xl">
+              An <span className="text-[#7A5542] font-semibold">AI Powered Application</span> for the Artisans to enter in to the
+              world of E-commerce
             </h2>
-            <p className="font-heebo text-[#303030] text-base">
-              Empowering Artisans, Weaving Dreams: Sabhyasha transforms the
-              touch of tradition into global tales through our marketplace and
-              our application
-            </p>
-            
-            <Button link={"/our-solution"} text="Read more"></Button>
-          </div>
+         
           <SolutionPPtContent></SolutionPPtContent>
-
+          <div className="text-center mt-6">
+            <Button text="Start Selling Now" className="no-underline"></Button>
+          </div>
         </div>
       </div>
       <div className="md:w-[50%] bg-white w-full ">
-
-        <img className="w-96 mx-auto" src={solutionImg} alt="" />
+        <img className="h-[800px] mx-auto" src={solutionImg} alt="" />
       </div>
     </div>
   );

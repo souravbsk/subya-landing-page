@@ -63,16 +63,16 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
             className=" flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
           ></div>
         </SwiperSlide>
-        <div className=" flex items-center absolute bg-[rgb(0 0 0 / 60%)] md:px-20 px-4 top-0 z-50 left-0 right-0 bottom-0 w-full space-y-3 md:space-y-5">
+        <div className=" flex items-end absolute bg-[rgb(0 0 0 / 60%)] md:px-20 px-4 top-0 z-50 left-0 right-0 bottom-0 w-full space-y-3 md:space-y-5">
           <div>
             <h2
               data-aos="fade-up"
               className="capitalize mb-3 text-white font-anton  font-semibold text-xl md:text-7xl  "
             >
-              Unlocking e-commerce <br /> for artisans with <br />
+              Unlocking e-commerce <br /> for artisans with 
               <span className="font-extrabold">ONDC</span>
             </h2>
-            <div>
+            <div className="mb-9 mt-6">
               <Link className="capitalize text-white font-bold md:text-2xl font-anton underline ">
                 Read More
               </Link>

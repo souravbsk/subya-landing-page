@@ -3,7 +3,7 @@ import React from 'react';
 const ProductCard = ({image,title, price, pera}) => {
     return (
         <div className="  bg-white shadow-md rounded-lg ">
-        <div className='h-[300px] overflow-hidden'>
+        <div className='overflow-hidden'>
           <img
             src={image}
             alt="Product Image"

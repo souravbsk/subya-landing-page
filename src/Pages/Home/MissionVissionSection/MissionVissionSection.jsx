@@ -22,9 +22,9 @@ const MissionVissionSection = () => {
               India’s vast artistic landscape is brought into the limelight,
               celebrated, and cherished by the world.
             </p>
-            <div className=" mt-4 md:mt-10">
+            {/* <div className=" mt-4 md:mt-10">
               <Button link={"/our-mission"} text="Read more"></Button>
-            </div>
+            </div> */}
             <div className="absolute bottom-8 md:bottom-14 right-3 md:right-28 opacity-50 text-xl md:text-4xl">
               <FaQuoteRight className="text-[#7A5542] " />
             </div>

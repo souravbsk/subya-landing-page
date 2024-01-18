@@ -16,17 +16,27 @@ body {
   /* font-family: 'Anton', sans-serif; */
 
 }
+
 .container {
   @apply mx-auto px-3 md:max-w-[992px] lg:max-w-[1320px]
 }
 
 .active {
-  position: relative;
-  text-decoration: none;
-  /* Remove the default underline */
+  background-image: url("./assets/first-section/icon-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.active::after {
+.headernavlink:hover {
+  background-image: url("./assets/first-section/icon-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.5s ease-in;
+}
+
+/* .active::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -42,7 +52,7 @@ body {
 .active:hover::after,
 .active:focus::after {
   transform: scaleX(1);
-}
+} */
 
 /* 
 .CircularProgressbar .CircularProgressbar-path {
@@ -76,9 +86,14 @@ body {
   margin: 20px
 }
 
-.progress::after {content: "%";}
+.progress::after {
+  content: "%";
+}
 
-.progress .title {position: relative;z-index: 100;}
+.progress .title {
+  position: relative;
+  z-index: 100;
+}
 
 .progress .overlay {
   width: 50%;
@@ -90,7 +105,8 @@ body {
   background-color: #F6F6F6;
 }
 
-.progress .left, .progress .right {
+.progress .left,
+.progress .right {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -102,43 +118,67 @@ body {
   transform-origin: right;
 }
 
-.progress .left {animation: load1 1s linear forwards;}
+.progress .left {
+  animation: load1 1s linear forwards;
+}
 
-.progress:nth-of-type(2) .right, .progress:nth-of-type(3) .right {animation: load2 .5s linear forwards 1s;}
+.progress:nth-of-type(2) .right,
+.progress:nth-of-type(3) .right {
+  animation: load2 .5s linear forwards 1s;
+}
 
-.progress:last-of-type .right, .progress:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+.progress:last-of-type .right,
+.progress:first-of-type .right {
+  animation: load3 .8s linear forwards 1s;
+}
 
 @keyframes load1 {
-  0% {transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
 
-  100% {transform: rotate(180deg);}
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
 @keyframes load2 {
-  0% {z-index: 100;transform: rotate(180deg);}
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
 
-  100% {z-index: 100;transform: rotate(270deg);}
+  100% {
+    z-index: 100;
+    transform: rotate(270deg);
+  }
 }
 
 @keyframes load3 {
-  0% {z-index: 100;transform: rotate(180deg);}
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
 
   100% {
-      z-index: 100;transform: rotate(315deg);}
+    z-index: 100;
+    transform: rotate(315deg);
+  }
 }
 
 
 
-.peraBg{
+.peraBg {
 
-  background-image: linear-gradient(rgba(255, 255, 255, 0.952), rgba(255, 255, 255, 0.925)),url("./assets/contentImage/pera.webp");
-  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.952), rgba(255, 255, 255, 0.925)), url("./assets/contentImage/pera.webp");
+
 }
 
 @keyframes gapTextAnimation {
   0% {
     transform: translateX(0px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(150px);
@@ -151,14 +191,15 @@ body {
 }
 
 
-.piechart canvas{
+.piechart canvas {
   height: 200px !important;
 }
 
 
-.react-tabs__tab--selected{
+.react-tabs__tab--selected {
 
-background-color: #7A5542 !important;
-color: #ffffff !important;
+  background-color: #7A5542 !important;
+  color: #ffffff !important;
+  border: none !important;
 
 }
