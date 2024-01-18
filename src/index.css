@@ -154,3 +154,11 @@ body {
 .piechart canvas{
   height: 200px !important;
 }
+
+
+.react-tabs__tab--selected{
+
+background-color: #7A5542 !important;
+color: #ffffff !important;
+
+}

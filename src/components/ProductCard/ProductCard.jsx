@@ -13,7 +13,7 @@ const ProductCard = ({image,title, price, pera}) => {
         <div className="p-8">
           <h3 className="text-2xl capitalize font-semibold mb-2">{title}</h3>
           <p className="text-gray-600 mb-2">{pera}</p>
-          <p className="text-[#7A5542] text-xl  font-bold">${price}</p>
+          {/* <p className="text-[#7A5542] text-xl  font-bold">${price}</p> */}
         </div>
       </div>
     );
