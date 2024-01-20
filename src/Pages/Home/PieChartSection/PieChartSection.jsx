@@ -7,6 +7,7 @@ import "react-circular-progressbar/dist/styles.css";
 import GoalSave from "./GoalSave";
 import PieChart from "../../../components/PieChart/PieChart";
 import RightBannerImage from "./RightBannerImage";
+import HorizontalTimeLine from "../../../components/HorizontalTimeLine/HorizontalTimeLine";
 const PieChartSection = () => {
   // const [counter, setCounter] = useState(0);
 
@@ -22,8 +23,8 @@ const PieChartSection = () => {
   //   return () => clearInterval(interval);
   // }, [counter]);
   return (
-    <div id="journey" className="flex flex-col lg:flex-row justify-between">
-      <div className="lg:w-[70%] w-full ">
+    <div id="journey" className="">
+      <div className=" w-full ">
         <div className="w-full flex flex-col md:flex-row">
           <div className=" flex-1">
             <img
@@ -82,11 +83,11 @@ const PieChartSection = () => {
             </div>
           </div>
         </div>
-        <GoalSave></GoalSave>
+        {/* <GoalSave></GoalSave> */}
       </div>
-      <div className="lg:w-[30%] w-full ">
+      {/* <div className="lg:w-[30%] w-full ">
         <RightBannerImage></RightBannerImage>
-      </div>
+      </div> */}
     </div>
   );
 };

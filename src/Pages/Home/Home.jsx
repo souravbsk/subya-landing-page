@@ -7,12 +7,14 @@ import SolutionSection from './SolutionSection/SolutionSection';
 import StoreSection from './StoreSection/StoreSection';
 import BlogSection from './BlogSection/BlogSection';
 import TabListSection from './TabListSection/TabListSection';
+import TimeLine from './TimeLine/TimeLine';
 
 const Home = () => {
     return (
        <div>
         <SliderHeroSection></SliderHeroSection>
         <PieChartSection></PieChartSection>
+        <TimeLine></TimeLine>
         <MissionVissionSection></MissionVissionSection>
         <NoticeSlider></NoticeSlider>
         <SolutionSection></SolutionSection>
