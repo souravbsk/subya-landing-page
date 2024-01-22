@@ -35,6 +35,13 @@ body {
   background-size: contain;
   transition: all 0.5s ease-in;
 }
+.shopbg {
+  background-image: url("./assets/first-section/icon-img.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  transition: all 0.5s ease-in;
+}
 
 
 
