@@ -6,9 +6,10 @@ const TabListSection = () => {
     <section className="py-32 max-w-full w-6/12 mx-auto">
       <Tabs className="text-center">
         <TabList className="border-0 mb-4 flex items-center justify-center gap-5">
-          <Tab className="w-full bg-white text-2xl border border-[#7A5542]  font-bold py-4 cursor-pointer rounded" >Team</Tab>
-          <Tab className="w-full bg-white text-2xl border border-[#7A5542]  font-bold py-4 cursor-pointer rounded">Awards</Tab>
-          <Tab className="w-full bg-white text-2xl border border-[#7A5542]  font-bold py-4 cursor-pointer rounded">Testimonials</Tab>
+
+          <Tab className="tab w-full px-5 py-3 text-2xl font-medium rounded">Team</Tab>
+          <Tab className="tab w-full px-5 py-3 text-2xl font-medium rounded">Awards</Tab>
+          <Tab className="tab w-full px-5 py-3 text-2xl font-medium rounded">Testimonials</Tab>
         </TabList>
 
         <TabPanel>
