@@ -76,6 +76,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
               <Link className="capitalize text-white font-bold md:text-2xl font-anton underline ">
                 Read More
               </Link>
+              
             </div>{" "}
           </div>
         </div>

@@ -14,7 +14,7 @@ const Home = () => {
        <div>
         <SliderHeroSection></SliderHeroSection>
         <PieChartSection></PieChartSection>
-        <TimeLine></TimeLine>
+        {/* <TimeLine></TimeLine> */}
         <MissionVissionSection></MissionVissionSection>
         <NoticeSlider></NoticeSlider>
         <SolutionSection></SolutionSection>

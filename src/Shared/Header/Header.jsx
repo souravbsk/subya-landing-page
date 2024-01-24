@@ -29,13 +29,13 @@ const Header = () => {
           </div>
 
           <ul
-            className={`flex md:w-auto w-full md:bg-transparent bg-white md:static absolute md:flex-row duration-300 flex-col md:items-center  gap-2 left-0 md:px-0 px-14 ${
+            className={`flex md:w-auto w-full md:bg-transparent bg-white md:static absolute md:flex-row  flex-col md:items-center  gap-2 left-0 md:px-0 px-14 ${
               isNavShow ? "top-24" : "-top-[500px]"
             }`}
           >
             <li>
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink font-anton font-semibold leading-7 text-base relative group"
+                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/"
                 >
                 Home
@@ -44,7 +44,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink font-anton font-semibold leading-7 text-base relative group"
+                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/journey"
               >
                 Journey
@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink font-anton font-semibold leading-7 text-base relative group"
+                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/donations"
                 >
                 Our Vision
@@ -62,7 +62,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink font-anton font-semibold leading-7 text-base relative group"
+                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/events"
                 >
                 Solution
@@ -71,7 +71,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#6D432F] px-2 py-2 headernavlink font-anton font-semibold leading-7 text-base relative group"
+                className="text-[#6D432F] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/blog"
                 >
                 Artisan’s Wizard
@@ -80,7 +80,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink font-anton font-semibold leading-7 text-base relative group"
+                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/shop"
               >
                 Shop
@@ -93,7 +93,7 @@ const Header = () => {
           <li></li>
           <li>
             <button
-              className="text-[#303030] px-2 py-2 headernavlink font-anton font-semibold leading-7 text-base relative group"
+              className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
               onClick={() => setSideBar(!isSidebar)}
               >
               <>
@@ -119,4 +119,4 @@ const Header = () => {
 
 export default Header;
 
-// <div className="absolute -bottom-2 left-0 w-0 bg-[#303030] h-1 transition-all duration-300 group-hover:w-full"></div>
+// <div className="absolute -bottom-2 left-0 w-0 bg-[#303030] h-1 transition-all  group-hover:w-full"></div>

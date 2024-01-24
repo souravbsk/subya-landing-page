@@ -10,7 +10,7 @@ const SolutionSection = () => {
       className="flex  bg-white items-center flex-col lg:flex-row justify-between"
     >
       <div className="md:w-[50%] w-full">
-        <div className="px-4 md:pl-48 md:pr-16  py-12  ">
+        <div className="px-4 md:px-20  py-12  ">
           
             <h2 className="text-[#303030] mb-6 font-medium text-center font-anton leading-tight text-4xl">
               An <span className="text-[#7A5542] font-semibold">AI Powered Application</span> for the Artisans to enter in to the

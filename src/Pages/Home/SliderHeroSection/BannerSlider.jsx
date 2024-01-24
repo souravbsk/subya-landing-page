@@ -1,8 +1,8 @@
 import SliderComponent from "../../../components/SliderComponent/SliderComponent";
-import bgimge1 from "../../../assets/first-slider/slider-1.jpg";
-import bgimge2 from "../../../assets//first-slider/slider-2.jpeg";
-import bgimge3 from "../../../assets//first-slider/slider-3.jpeg";
-import bgimge4 from "../../../assets//first-slider/slider-4.jpeg";
+import bgimge1 from "../../../assets/first-slider/slider-1.webp";
+import bgimge2 from "../../../assets//first-slider/slider-2.webp";
+import bgimge3 from "../../../assets//first-slider/slider-3.webp";
+import bgimge4 from "../../../assets//first-slider/slider-4.webp";
 const BannerSlider = () => {
   return (
     <>
