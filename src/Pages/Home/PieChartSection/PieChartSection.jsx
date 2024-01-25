@@ -5,7 +5,6 @@ import bannerImg from "../../../assets/second-section/left-img.jpeg";
 import "react-circular-progressbar/dist/styles.css";
 import Button from "../../../components/Button/Button";
 const PieChartSection = () => {
-
   return (
     <div id="journey" className="">
       <div className=" w-full ">
@@ -18,12 +17,11 @@ const PieChartSection = () => {
             />
           </div>
           <div className=" flex-1 ">
-            <div className="py-10 flex  flex-col h-full items-center justify-center  px-8 md:px-4 space-y-3">
-              
-              
+            <div className="py-10 flex  flex-col h-full items-center justify-center  px-8 md:px-6 bg-[#f9ebe0] space-y-3">
               <div data-aos="fade-up" className="text-center ">
-                <p className="font-heebo font-extrabold text-[#303030] text-2xl">
-                20 Crore Indians depend on Handloom and Handicraft for earning Livelihood
+                <p className="font-heebo mb-2 font-extrabold text-[#5D2F18] text-5xl">
+                  20 Crore Indians depend on Handloom and Handicraft for earning
+                  Livelihood
                 </p>
               </div>
               <div>
@@ -33,7 +31,6 @@ const PieChartSection = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

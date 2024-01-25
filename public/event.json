@@ -1,18 +1,32 @@
 [
-    {
-      "id": 1,
-      "date": "2024-01-25",
-      "content": "This is the <strong>content</strong> for entry 1."
-    },
-    {
-      "id": 2,
-      "date": "2024-01-26",
-      "content": "Content for entry 2 <strong>goes here</strong>."
-    },
-    {
-      "id": 3,
-      "date": "2024-01-27",
-      "content": "Entry 3 has its own <a href=\"https://example.com\">content</a>."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "date": "7 MARCH",
+    "content": "Incorporated  <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong>"
+  },
+  {
+    "id": 2,
+    "date": "15 APRIL",
+    "content": "Collaborated with our <strong>First Artisan</strong> - a Pattachitra Artist"
+  },
+  {
+    "id": 3,
+    "date": "15 AUGUST",
+    "content": "Launched <strong><a href='https://www.sabhyasha.com'>www.sabhyasha.com</a></strong> e-commerce store."
+  },
+  {
+    "id": 4,
+    "date": "14 SEPTEMBER",
+    "content": "Recognised as <strong>Top 20</strong> Startups in Startup Odisha Fundstack 2.0"
+  },
+  {
+    "id": 5,
+    "date": "10 OCTOBER",
+    "content": "Signed MOU with Govt. of Uttarakhand"
+  },
+  {
+    "id": 6,
+    "date": "11 OCTOBER",
+    "content": "Got selected into the prestigious Microsoft for Startups Founders Hub!"
+  }
+]

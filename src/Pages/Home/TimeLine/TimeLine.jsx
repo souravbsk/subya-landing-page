@@ -18,29 +18,42 @@ const TimeLine = () => {
   }, []);
 
   return (
-    <VerticalTimeline>
-      {events.map((event) => (
-        <VerticalTimelineElement 
-        key={event.id}
-          className="vertical-timeline-element--work "
-          contentStyle={{}}
-          contentArrowStyle={{}}
-          dateClassName="text-[#7A5542] font-semibold"
-          date={event?.date}
+    <div
+      className="flex py-20 items-center peraBg
+     justify-center gap-12"
+    >
+      <div className="flex-1 px-12">
+        <div className="text-center">
+          <h4 className="text-2xl mb-3 font-bold text-[#5D2F18] text-timeline">TimeLine</h4>
+          <h2 className="text-6xl font-extrabold mb-3 text-[#7A5542] ">SABHYASHA</h2>
+          <p className="font-heebo text-center font-medium text-[#7A5542] text-xl">
+            Ever since its inception, Sabhyasha Retail Tech has been making
+            progress in all domains
+          </p>
+        </div>
+      </div>
+      <VerticalTimeline>
+        {events.map((event) => (
+          <VerticalTimelineElement
+            key={event.id}
+            className="vertical-timeline-element--work "
+            contentStyle={{}}
+            contentArrowStyle={{}}
+            dateClassName="text-[#7A5542] font-bold"
+            date={event?.date}
+            iconStyle={{ backgroundColor: "#7A5542", color: "white" }}
+            icon={<GiFlowerEmblem />}
+          >
+            <p dangerouslySetInnerHTML={{ __html: event.content }}></p>
+          </VerticalTimelineElement>
+        ))}
+
+        <VerticalTimelineElement
           iconStyle={{ backgroundColor: "#7A5542", color: "white" }}
           icon={<GiFlowerEmblem />}
-        >
-          <p>
-            {event.content}
-          </p>
-        </VerticalTimelineElement>
-      ))}
-
-      <VerticalTimelineElement
-        iconStyle={{ backgroundColor: "#7A5542", color: "white" }}
-        icon={<GiFlowerEmblem />}
-      />
-    </VerticalTimeline>
+        />
+      </VerticalTimeline>
+    </div>
   );
 };
 

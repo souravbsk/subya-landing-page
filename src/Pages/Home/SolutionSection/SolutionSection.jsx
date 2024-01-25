@@ -7,7 +7,7 @@ const SolutionSection = () => {
   return (
     <div
       id="journey"
-      className="flex  bg-white items-center flex-col lg:flex-row justify-between"
+      className="flex  bg-[#f9ebe0] items-center flex-col lg:flex-row justify-between"
     >
       <div className="md:w-[50%] w-full">
         <div className="px-4 md:px-20  py-12  ">
@@ -23,7 +23,7 @@ const SolutionSection = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[50%] bg-white w-full ">
+      <div className="md:w-[50%]  w-full ">
         <img className="h-[800px] mx-auto" src={solutionImg} alt="" />
       </div>
     </div>
