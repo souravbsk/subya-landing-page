@@ -6,9 +6,9 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'heebo': ['Oswald', "sans-serif"],
-      "anton": ['Oswald', "sans-serif"],
-      "oswald": ['Oswald', "sans-serif"],
+      'heebo': ["sans-serif"],
+      "anton": [ "sans-serif"],
+      "oswald": [ "sans-serif"],
     },
   },
   plugins: [require("daisyui")],

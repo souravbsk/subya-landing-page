@@ -1,28 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import CountUp from "react-countup";
+
 import bannerImg from "../../../assets/second-section/left-img.jpeg";
 import "react-circular-progressbar/dist/styles.css";
-import GoalSave from "./GoalSave";
-import PieChart from "../../../components/PieChart/PieChart";
-import RightBannerImage from "./RightBannerImage";
-import HorizontalTimeLine from "../../../components/HorizontalTimeLine/HorizontalTimeLine";
 import Button from "../../../components/Button/Button";
 const PieChartSection = () => {
-  // const [counter, setCounter] = useState(0);
 
-  // useEffect(() => {
-  //   const updateCounter = () => {
-  //     if (counter < 76) {
-  //       setCounter(counter + 1);
-  //     }
-  //   };
-
-  //   const interval = setInterval(updateCounter, 50);
-
-  //   return () => clearInterval(interval);
-  // }, [counter]);
   return (
     <div id="journey" className="">
       <div className=" w-full ">
@@ -49,11 +32,8 @@ const PieChartSection = () => {
             </div>
           </div>
         </div>
-        {/* <GoalSave></GoalSave> */}
       </div>
-      {/* <div className="lg:w-[30%] w-full ">
-        <RightBannerImage></RightBannerImage>
-      </div> */}
+
     </div>
   );
 };

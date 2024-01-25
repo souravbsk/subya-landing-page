@@ -1,22 +1,46 @@
-import React from "react";
-import HorizontalTimeLine from "../../../components/HorizontalTimeLine/HorizontalTimeLine";
-import Marquee from "react-fast-marquee";
-import SectionTitle from "../../../components/SectionTitle/SectionTitle";
-
+import React, { useEffect, useState } from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import "./TimeLine.css";
+import { GiFlowerEmblem } from "react-icons/gi";
 const TimeLine = () => {
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    fetch("/event.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setEvents(data);
+      });
+  }, []);
+
   return (
-    <div className="py-16 overflow-x-auto">
-        <h3 className="text-center">TiMELINE</h3>
-        <SectionTitle title="Sabayasha"></SectionTitle>
-    <p className="text-center font-extrabold text-2xl mb-12">2022</p>
+    <VerticalTimeline>
+      {events.map((event) => (
+        <VerticalTimelineElement 
+        key={event.id}
+          className="vertical-timeline-element--work "
+          contentStyle={{}}
+          contentArrowStyle={{}}
+          dateClassName="text-[#7A5542] font-semibold"
+          date={event?.date}
+          iconStyle={{ backgroundColor: "#7A5542", color: "white" }}
+          icon={<GiFlowerEmblem />}
+        >
+          <p>
+            {event.content}
+          </p>
+        </VerticalTimelineElement>
+      ))}
 
-
-        <HorizontalTimeLine></HorizontalTimeLine>
-    <p className="text-center font-extrabold text-2xl my-12">2023</p>
-
-        <HorizontalTimeLine></HorizontalTimeLine>
-      
-    </div>
+      <VerticalTimelineElement
+        iconStyle={{ backgroundColor: "#7A5542", color: "white" }}
+        icon={<GiFlowerEmblem />}
+      />
+    </VerticalTimeline>
   );
 };
 

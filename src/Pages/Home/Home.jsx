@@ -8,19 +8,22 @@ import StoreSection from './StoreSection/StoreSection';
 import BlogSection from './BlogSection/BlogSection';
 import TabListSection from './TabListSection/TabListSection';
 import TimeLine from './TimeLine/TimeLine';
+import ScrollableTab from '../../components/ScrollableTab/ScrollableTab';
 
 const Home = () => {
     return (
        <div>
         <SliderHeroSection></SliderHeroSection>
         <PieChartSection></PieChartSection>
-        {/* <TimeLine></TimeLine> */}
+        <TimeLine></TimeLine>
         <MissionVissionSection></MissionVissionSection>
         <NoticeSlider></NoticeSlider>
         <SolutionSection></SolutionSection>
+        {/* <ScrollableTab></ScrollableTab> */}
         <StoreSection></StoreSection>
         <BlogSection></BlogSection>
         <TabListSection></TabListSection>
+
        </div>
     );
 };

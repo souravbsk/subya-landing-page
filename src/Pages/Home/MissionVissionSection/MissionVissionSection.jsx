@@ -6,10 +6,10 @@ import Button from "../../../components/Button/Button";
 
 const MissionVissionSection = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between">
+    <div  className="flex flex-col lg:flex-row justify-between">
       <div className=" w-full ">
-        <div className="p-4 md:p-20  bg-[#7A5542]">
-          <div className=" text-center relative bg-white p-8 md:py-[75px] md:px-44 rounded-3xl">
+        <div  className="p-4 md:p-20  bg-[#7A5542]">
+          <div data-aos="flip-up" className=" text-center relative bg-white p-8 md:py-[75px] md:px-44 rounded-3xl">
             <div className="absolute top-8 left-3 md:top-14 md:left-28 opacity-50 text-xl md:text-4xl ">
               <FaQuoteLeft className="text-[#7A5542]" />
             </div>

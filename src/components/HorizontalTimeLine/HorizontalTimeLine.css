@@ -100,8 +100,3 @@
     top: 116px;
 }
 
-@media (max-width:460px) {
-    body {
-        display: none;
-    }
-}

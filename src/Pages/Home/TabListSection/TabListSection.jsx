@@ -5,11 +5,11 @@ const TabListSection = () => {
   return (
     <section className="py-32 max-w-full w-6/12 mx-auto">
       <Tabs className="text-center">
-        <TabList className="border-0 mb-4 flex items-center justify-center gap-5">
+        <TabList className="border-0 mb-4 flex flex-col md:flex-row items-center justify-center gap-5">
 
-          <Tab className="tab w-full px-5 py-3 text-2xl font-medium rounded">Team</Tab>
-          <Tab className="tab w-full px-5 py-3 text-2xl font-medium rounded">Awards</Tab>
-          <Tab className="tab w-full px-5 py-3 text-2xl font-medium rounded">Testimonials</Tab>
+          <Tab className="shadow-2xl w-full my-button mx-auto h-16   text-[#7A5542] font-bold  flex justify-center items-center rounded-lg cursor-pointer relative overflow-hidden">Team</Tab>
+          <Tab className="shadow-2xl w-full my-button mx-auto h-16   text-[#7A5542] font-bold  flex justify-center items-center rounded-lg cursor-pointer relative overflow-hidden">Awards</Tab>
+          <Tab className="shadow-2xl w-full my-button mx-auto h-16   text-[#7A5542] font-bold  flex justify-center items-center rounded-lg cursor-pointer relative overflow-hidden">Testimonials</Tab>
         </TabList>
 
         <TabPanel>

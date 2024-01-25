@@ -1,0 +1,15 @@
+.vertical-timeline-element{
+    margin: 1em 0 !important;
+}
+
+.vertical-timeline.vertical-timeline--two-columns:before{
+    margin-left: 0 !important;
+}
+
+.vertical-timeline{
+    padding: 0 !important;
+}
+
+    .vertical-timeline.vertical-timeline--two-columns {
+        width: 50% !important;
+    }

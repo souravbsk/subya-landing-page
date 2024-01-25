@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap'); */
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family:  sans-serif !important;
   /* font-family: 'Anton', sans-serif; */
 
 }
@@ -172,39 +172,80 @@ body {
 
 
 
-.tab {
-  border: 1px rgba(122, 85, 66, 0.5) solid;
-  box-shadow: 0px 3px 10px rgba(255,255,255,.1);
-  /* border-bottom: 5px rgba(255,255,255,.1) solid; */
-  color: rgba(222, 115, 61, 0.5);
-  position: relative;
-  /* height: 3rem !important; */
-  height: auto ;
-  transition: box-shadow .5s ease 0s, top .5s ease 0s, border .5s ease 0s, color .5s ease 0s;
-}
-
-.tab:hover {
-  cursor: pointer;
-  box-shadow: 0px 6px 15px rgba(122, 85, 66, 0.5) !important;
-  border: 1px rgba(122, 85, 66, 0.5) solid;
-  color: rgba(122, 85, 66, 0.8);
-  /* border-bottom: 5px rgba(255,255,255,.3) solid; */ 
-}
-
-.react-tabs__tab--selected {
-
-  box-shadow: 0px 6px 15px rgba(255, 30, 30, .5);
-  border: 1px rgba(255,30,30,.4) solid !important;
-  top: -3px;
-  color: rgba(255,50,50,1) !important;
-  outline: none !important;
-
-}
-
-
 
 .shadow-custom:hover{
   box-shadow: -7px 10px 12px 2px rgba(122 85 66 / 40%);
 }
 
 
+.my-button::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 0%;
+  height: 0%;
+  background: #69402b9f;
+  transition: 0.5s ease-out;
+  border-radius: 100% 100% 100% 100%;
+  opacity: 0%;
+}
+
+.my-button:hover:before {
+  width: 500px;
+  height: 500px;
+  transition: 0.5s ease-out;
+  border-radius: 0;
+  animation: opacity-in .7s forwards ease-out;
+}
+
+.my-button:hover {
+  animation: bouncerino-in .5s forwards alternate ease-out;
+}
+.my-button:hover:p {
+  transform: scale(5);
+  transition: 0.7s ease-out;
+}
+
+
+.my-button {
+  animation: bouncerino-out .5s;
+}
+@keyframes bouncerino-in {
+  100% {
+    transform: scale(1.075);
+  }
+  70% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1.075);
+  }
+  40% {
+    transform: scale(1.09);
+  }
+}
+
+@keyframes bouncerino-out {
+  100% {
+    transform: scale(1.0);
+  }
+  0% {
+    transform: scale(1.075);
+  }
+}
+
+@keyframes opacity-in {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+
+.react-tabs__tab--selected{
+  background-color: #7A5542 !important;
+  color: white !important;
+
+}
