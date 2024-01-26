@@ -9,8 +9,8 @@ const Header = () => {
   const [isNavShow, setNavShow] = useState(false);
   
   return (
-    <header className="sticky top-0 z-50">
-      <nav className="flex bg-white py-4 px-4 md:px-14  items-center justify-between">
+    <header className="sticky   top-0 z-50">
+      <nav className="flex bg-white shadow-md rounded-b-3xl backdrop-blur-2xl py-4 px-4 md:px-14  items-center justify-between">
         <div className="flex lg:w-auto w-full gap-4 items-center justify-between">
           <div className="md:inline  flex items-center justify-between w-full ">
             <Link className="block w-full" to="/">
