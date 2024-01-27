@@ -11,7 +11,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="bg-[#F6F6F6]">
+    <div className="bg-[#F6F6F6] overflow-hidden">
       <Header></Header>
       <Outlet></Outlet>
       <Footer></Footer>

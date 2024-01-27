@@ -3,7 +3,31 @@
 @tailwind utilities;
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap'); */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #F9EBE0 #7a5441b8;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-thumb {
+  background-color: #F9EBE0;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background:#7A5441;
+  border-radius: 8px;
+}
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap');
 
 
@@ -13,11 +37,20 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 body {
   font-family: sans-serif !important;
@@ -291,7 +324,7 @@ body {
 
 .masked-text-wrapper h2 {
   font-size: 7.5rem;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
   /* color: #333; */
   text-transform: uppercase;
@@ -301,7 +334,7 @@ body {
 .masked-text-wrapper .text-default:before,
 .masked-text-wrapper .text-default:after {
   content: "";
-  width: 2px;
+  width: 3px;
   height: 100%;
   background-color: #5D2F18;
   position: absolute;
@@ -322,8 +355,7 @@ body {
   top: 0;
   left: 0;
   width: var(--_box-width);
-  color: #A79084;
-  -webkit-text-stroke: 0.5px #5D2F18;
+  color: white;
   animation: rectangle 8s infinite;
 }
 
