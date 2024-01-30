@@ -9,7 +9,7 @@ const BlogSection = () => {
       <div className='container'>
       <SectionTitle title="Latest Posts"></SectionTitle>
          <BlogsContainer></BlogsContainer>
-          <div className="text-center">
+          <div data-aos="fade-up" className="text-center">
             <Button link={"/"} text="Read More Blogs" className="no-underline"></Button>
           </div>
       </div>

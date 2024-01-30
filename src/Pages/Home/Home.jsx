@@ -12,7 +12,7 @@ import ScrollableTab from '../../components/ScrollableTab/ScrollableTab';
 
 const Home = () => {
     return (
-       <div>
+       <div className='mt-20'>
         <SliderHeroSection></SliderHeroSection>
         <PieChartSection></PieChartSection>
         <TimeLine></TimeLine>

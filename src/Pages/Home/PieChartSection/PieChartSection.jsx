@@ -24,7 +24,7 @@ const PieChartSection = () => {
                   Livelihood
                 </p>
               </div>
-              <div>
+              <div data-aos="zoom-in-up">
                 <Button link="#" text="Read More"></Button>
               </div>
             </div>

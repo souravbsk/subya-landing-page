@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
+import SocialLinks from "../../components/SocialLinks/SocialLinks";
 
 const NavSideBar = ({ isSidebar, setSideBar }) => {
   useEffect(() => {
@@ -27,32 +28,29 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
           HELLO!
         </h1>
         <p className="text-base font-heebo text-[#303030]">
-          DoGood theme is especially made for charities & fundraising. Making
-          the WP world a better place!
+         
         </p>
         <h3 className="text-xl py-8 font-heebo font-bold text-[#303030]">
           Our info
         </h3>
-        <ul className="pr-16 space-y-4">
+        <ul className=" space-y-4">
           <li>
-            <Link>+00112234445</Link>
+            <Link>+91-8926273115</Link>
           </li>
           <li>
-            <Link>dogood@qodeinteractive.com</Link>
+            <Link>care@sabhyasha.com</Link>
           </li>
           <li>
-            <p>23 Fridderich Moulin Rode, Vienna AU</p>
+            <p>
+              Sabhyasha Retail Tech Pvt. Ltd. 506, G Block, Utkal Vatika
+              Jharpada Canal Road, Bhubaneswar – 751006
+            </p>
           </li>
         </ul>
         <h3 className="text-xl py-6 font-heebo font-bold text-[#303030]">
           Follow us
         </h3>
-        <ul className="flex items-center gap-6">
-            <li><FaFacebook></FaFacebook></li>
-            <li><FaTwitter></FaTwitter></li>
-            <li><FaInstagram></FaInstagram></li>
-        </ul>
-
+        <SocialLinks classNameli="backdrop-brightness-90"></SocialLinks>
       </div>
     </div>
   );

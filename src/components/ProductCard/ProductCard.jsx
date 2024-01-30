@@ -3,7 +3,7 @@ import icon from "../../assets/first-section/icon-img.png";
 
 const ProductCard = ({ image, title, price, pera }) => {
   return (
-    <div className="relative group cursor-pointer">
+    <div data-aos="flip-right" className="relative group cursor-pointer">
       <div className="overflow-hidden">
         <img
           src={image}

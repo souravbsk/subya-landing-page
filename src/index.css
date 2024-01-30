@@ -62,19 +62,34 @@ body {
   @apply mx-auto px-3 md:max-w-[992px] lg:max-w-[1320px]
 }
 
-.active {
+/* .active {
   background-image: url("./assets/first-section/icon-img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
+  position: relative;
+  z-index: -5;
+} */
 
 .headernavlink:hover {
   background-image: url("./assets/first-section/icon-img.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60px 35px;
-  object-fit: cover;
+  background-size: contain;
+  z-index: 2;
+  
+}
+.headernavlink::after{
+  content: "";
+  height: 25px;
+  
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.932);
+  top: 50%;
+  left:0 ;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
 }
 
 .shopbg {

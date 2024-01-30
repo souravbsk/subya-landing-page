@@ -8,7 +8,7 @@ import image6 from "../../../assets/shop/6.webp";
 import ProductCard from "../../../components/ProductCard/ProductCard";
 const ShopProduct = () => {
   return (
-    <div className="grid my-12 md:grid-cols-2 grid-cols-1  lg:grid-cols-3 gap-8">
+    <div  className="grid my-12 md:grid-cols-2 grid-cols-1  lg:grid-cols-3 gap-8">
     <ProductCard image={image1} title="HOME DECOR" pera="Product Description" price="19.99"></ProductCard>
     <ProductCard image={image2} title="PAINTINGS" pera="Product Description" price="19.99"></ProductCard>
     <ProductCard image={image3} title="SAREES" pera="Product Description" price="19.99"></ProductCard>

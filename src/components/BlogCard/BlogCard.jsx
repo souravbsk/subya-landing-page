@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 const BlogCard = ({ imageUrl, category, title, content, link,date }) => {
   return (
-    <div className="w-full flex flex-col justify-between relative max-w-full bg-white  border rounded-lg hover:shadow-md duration-300 overflow-hidden ">
+    <div data-aos="flip-left" className="w-full flex flex-col justify-between relative max-w-full bg-white  border rounded-lg hover:shadow-md duration-300 overflow-hidden ">
       <div>
         <img
           src={imageUrl}

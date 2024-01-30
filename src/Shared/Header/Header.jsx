@@ -9,7 +9,7 @@ const Header = () => {
   const [isNavShow, setNavShow] = useState(false);
   
   return (
-    <header className="sticky   top-0 z-50">
+    <header data-aos="fade-down" className="fixed left-0 right-0  top-0 z-50">
       <nav className="flex bg-white shadow-md rounded-b-3xl backdrop-blur-2xl py-4 px-4 md:px-14  items-center justify-between">
         <div className="flex lg:w-auto w-full gap-4 items-center justify-between">
           <div className="md:inline  flex items-center justify-between w-full ">
@@ -33,54 +33,52 @@ const Header = () => {
               isNavShow ? "top-24" : "-top-[500px]"
             }`}
           >
-            <li>
+            <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base ">
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/"
                 >
                 Home
                 
               </NavLink>
             </li>
-            <li>
+            <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base ">
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
                 to="/journey"
               >
                 Journey
                 
               </NavLink>
             </li>
-            <li>
+            <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base ">
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
+                className=""
                 to="/donations"
                 >
                 Our Vision
                 
               </NavLink>
             </li>
-            <li>
+            <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base">
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
+                className=" "
                 to="/events"
                 >
                 Solution
                 
               </NavLink>
             </li>
-            <li>
+            <li className="text-[#6D432F] relative px-3 py-5 headernavlink  tracking-wide font-anton font-semibold leading-7 text-base ">
               <NavLink
-                className="text-[#6D432F] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
+                className=""
                 to="/blog"
                 >
                 Artisan’s Wizard
                 
               </NavLink>
             </li>
-            <li>
+            <li className="text-[#303030] relative relative z-50 px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base">
               <NavLink
-                className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
+                className=" "
                 to="/shop"
               >
                 Shop
@@ -93,7 +91,7 @@ const Header = () => {
           <li></li>
           <li>
             <button
-              className="text-[#303030] px-2 py-2 headernavlink tracking-widest font-anton font-semibold leading-7 text-base "
+              className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base "
               onClick={() => setSideBar(!isSidebar)}
               >
               <>

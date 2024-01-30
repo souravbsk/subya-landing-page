@@ -23,8 +23,8 @@ const TimeLine = () => {
      justify-center gap-12"
     >
       <div className="flex-1 px-12">
-        <div className="text-center">
-          <h4 className="text-2xl mb-3 font-bold text-[#5D2F18] text-timeline">TimeLine</h4>
+        <div data-aos="fade-right" className="text-center">
+          <h4  className="text-2xl mb-3 font-bold text-[#5D2F18] text-timeline">Journey of Subhysyha</h4>
           <h2 className="text-6xl font-extrabold mb-3 text-[#7A5542] ">SABHYASHA</h2>
           <p className="font-heebo text-center font-medium text-[#7A5542] text-xl">
             Ever since its inception, Sabhyasha Retail Tech has been making
