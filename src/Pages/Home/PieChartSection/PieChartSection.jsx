@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "react-circular-progressbar/dist/styles.css";
 
 import bannerImg from "../../../assets/second-section/left-img.jpeg";
-import "react-circular-progressbar/dist/styles.css";
 import Button from "../../../components/Button/Button";
 const PieChartSection = () => {
   return (

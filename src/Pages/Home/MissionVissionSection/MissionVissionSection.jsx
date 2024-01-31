@@ -9,7 +9,7 @@ import "swiper/css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Navigation,Mousewheel } from "swiper/modules";
 import MissionVisionSliderBox from "../../../components/MissionVisionSliderBox/MissionVisionSliderBox";
 
 const MissionVissionSection = () => {
@@ -32,9 +32,10 @@ const MissionVissionSection = () => {
         <div className="p-4 md:p-20  bg-[#7A5542]">
           <Swiper
             onSlideChange={handleSlideChange}
+            mousewheel={true}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             navigation={true}
-            modules={[Navigation]}
+            modules={[Navigation,Mousewheel]}
             className="mySwiper rounded-3xl bg-white"
           >
             <SwiperSlide>

@@ -8,7 +8,6 @@ import StoreSection from './StoreSection/StoreSection';
 import BlogSection from './BlogSection/BlogSection';
 import TabListSection from './TabListSection/TabListSection';
 import TimeLine from './TimeLine/TimeLine';
-import ScrollableTab from '../../components/ScrollableTab/ScrollableTab';
 
 const Home = () => {
     return (
@@ -19,7 +18,6 @@ const Home = () => {
         <MissionVissionSection></MissionVissionSection>
         <NoticeSlider></NoticeSlider>
         <SolutionSection></SolutionSection>
-        {/* <ScrollableTab></ScrollableTab> */}
         <StoreSection></StoreSection>
         <BlogSection></BlogSection>
         <TabListSection></TabListSection>

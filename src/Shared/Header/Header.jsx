@@ -72,7 +72,7 @@ const Header = () => {
                 className=""
                 to="/blog"
                 >
-                Artisan’s Wizard
+                Artisans’ Wizard
                 
               </NavLink>
             </li>
