@@ -4,7 +4,7 @@ import startuplogo from "../../assets/footer/startuplogo.png";
 import mastercard from "../../assets/payment-icons/mastercard.svg";
 import paytm from "../../assets/payment-icons/paytm.svg";
 import upi from "../../assets/payment-icons/upi.svg";
-import bhim from "../../assets/payment-icons/bhim.svg";
+import rupay from "../../assets/payment-icons/rupay.svg";
 import visa from "../../assets/payment-icons/visa.svg";
 
 import SocialLinks from "../../components/SocialLinks/SocialLinks";
@@ -105,6 +105,22 @@ const Footer = () => {
               <ul className="flex items-center gap-4">
                 <li>
                   <img
+                    className="w-12 object-contain h-auto"
+                    src={upi}
+                    alt=""
+                    srcset=""
+                  />
+                </li>
+                <li>
+                  <img
+                    className="w-16 object-contain h-auto"
+                    src={rupay}
+                    alt=""
+                    srcset=""
+                  />
+                </li>
+                <li>
+                  <img
                     className="w-8 object-contain h-auto"
                     src={mastercard}
                     alt=""
@@ -115,14 +131,6 @@ const Footer = () => {
                   <img
                     className="w-12 object-contain h-auto"
                     src={visa}
-                    alt=""
-                    srcset=""
-                  />
-                </li>
-                <li>
-                  <img
-                    className="w-12 object-contain h-auto"
-                    src={upi}
                     alt=""
                     srcset=""
                   />
