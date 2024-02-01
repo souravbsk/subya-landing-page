@@ -6,7 +6,7 @@ const TeamsTab = () => {
     <div data-aos="fade-up" className="flex shadow-md  bg-white px-12 py-12 rounded-3xl flex-col gap-8">
       <div className="flex border-b pb-8 items-center gap-12">
         <figure data-aos="fade-right" className="shrink-0 ">
-          <img className=" w-80 rounded-3xl " src={alisha} alt="alisha" />
+          <img className=" w-56 rounded-3xl " src={alisha} alt="alisha" />
         </figure>
         <div>
           <h2 data-aos="fade-left" className="text-[#303030] text-3xl font-extrabold mb-4 ">
@@ -23,7 +23,7 @@ const TeamsTab = () => {
       </div>
       <div className="flex items-center gap-12">
         <figure data-aos="fade-right" className="shrink-0 ">
-          <img className=" w-80 rounded-3xl " src={sasank} alt="Sasank" />
+          <img className=" w-56 rounded-3xl " src={sasank} alt="Sasank" />
         </figure>
         <div>
           <h2 data-aos="fade-left" className="text-[#303030] text-3xl font-extrabold mb-4 ">

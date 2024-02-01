@@ -1,0 +1,4 @@
+.awardimg{
+    border: 20px solid transparent;
+    border-image: url('../../assets/first-section/icon-img.png') 130 round;
+}

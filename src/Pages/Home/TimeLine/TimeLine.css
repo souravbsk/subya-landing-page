@@ -29,7 +29,7 @@
     }
 
     .vertical-timeline.vertical-timeline--two-columns {
-        width: 50% !important;
+        width: 100% !important;
     }
 
     .vertical-timeline--two-columns .vertical-timeline-element-icon {

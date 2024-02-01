@@ -28,14 +28,14 @@ const Footer = () => {
                 Who We Are
               </h3>
               <p>
-                Sabhyasha Retail Tech Pvt. Ltd. <br /> 506, G Block, Utkal
-                Vatika Jharpada Canal <br /> Road, Bhubaneswar – 751006
+                <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong> <br /> 506, G Block, Utkal
+                Vatika, Jharpada Canal <br /> Road, Bhubaneswar – 751006
                 <br /> <Link to="tel:+91-8926273115">+91-8926273115</Link>{" "}
                 <br />{" "}
                 <Link to="mailto:care@sabhyasha.com">care@sabhyasha.com</Link>
               </p>
             </div>
-            <div className="">
+            <div className="col-span-2">
               <h3 className="text-2xl mb-[30px] text-white font-bold">
                 Find Out What We Have
               </h3>
@@ -46,17 +46,7 @@ const Footer = () => {
                 Painted Saree
               </p>
             </div>
-            <div className="">
-              <h3 className="text-2xl mb-[30px] text-white font-bold">
-                Sabhyasha Privacy Policy
-              </h3>
-              <p>
-                Dhokra, Jewellery Boxes, Wall Decor, Tabletop Decor, Bamboo
-                Craft, Pattachitra Painting, Palmleaf Painting, Handbags,
-                Bookmarks, Pattachitra Hand Painted Dupatta, Pattachitra Hand
-                Painted Saree
-              </p>
-            </div>
+            
             <div>
               <h3 className="text-2xl mb-[30px] text-white font-bold">
                 Find Out What We Have
@@ -92,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link className="py-2 px-3 border-s" to="/">
-                  Terms and Policy
+                  Terms and Conditions
                 </Link>
               </li>
               <li>

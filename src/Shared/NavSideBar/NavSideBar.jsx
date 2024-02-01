@@ -27,24 +27,22 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
         <h1 className="text-5xl font-anton font-extrabold text-[#303030] mb-3">
           HELLO!
         </h1>
-        <p className="text-base font-heebo text-[#303030]">
-         
-        </p>
+        <p className="text-base font-heebo text-[#303030]"></p>
         <h3 className="text-xl py-8 font-heebo font-bold text-[#303030]">
-          Our info
+          Contact Us
         </h3>
         <ul className=" space-y-4">
+          <li>
+            <p>
+              <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong> 506, G Block, Utkal Vatika
+              Jharpada Canal Road, Bhubaneswar – 751006
+            </p>
+          </li>
           <li>
             <Link>+91-8926273115</Link>
           </li>
           <li>
             <Link>care@sabhyasha.com</Link>
-          </li>
-          <li>
-            <p>
-              Sabhyasha Retail Tech Pvt. Ltd. 506, G Block, Utkal Vatika
-              Jharpada Canal Road, Bhubaneswar – 751006
-            </p>
           </li>
         </ul>
         <h3 className="text-xl py-6 font-heebo font-bold text-[#303030]">

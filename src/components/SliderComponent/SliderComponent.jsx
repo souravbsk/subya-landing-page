@@ -34,7 +34,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
         <SwiperSlide>
           <div
             style={{
-              backgroundImage: ` url(${bgimge1})`,
+              backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge1})`,
             }}
             className=" flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
           ></div>
@@ -42,7 +42,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
         <SwiperSlide>
           <div
             style={{
-              backgroundImage: ` url(${bgimge2})`,
+              backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge2})`,
             }}
             className=" flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
           ></div>
@@ -50,7 +50,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
         <SwiperSlide>
           <div
             style={{
-              backgroundImage: ` url(${bgimge3})`,
+              backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge3})`,
             }}
             className=" flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
           ></div>
@@ -58,7 +58,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
         <SwiperSlide>
           <div
             style={{
-              backgroundImage: ` url(${bgimge4})`,
+              backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)), url(${bgimge4})`,
             }}
             className=" flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
           ></div>
@@ -67,10 +67,10 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
           <div>
             <h2
               data-aos="fade-up"
-              className="capitalize mb-3 text-white font-anton  font-semibold text-xl md:text-7xl  "
+              className="capitalize mb-3 text-white font-anton  font-semibold text-xl md:text-6xl  "
             >
               Unlocking e-commerce <br /> for artisans with 
-              <span className="font-extrabold">ONDC</span>
+              <span className="font-extrabold"> ONDC</span>
             </h2>
             <div className="mb-9 mt-6">
               <Link className="capitalize text-white font-bold md:text-2xl font-anton underline ">

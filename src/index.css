@@ -82,7 +82,6 @@ body {
 .headernavlink::after{
   content: "";
   height: 25px;
-  
   position: absolute;
   background-color: hsla(0, 0%, 100%, 0.932);
   top: 50%;
@@ -90,6 +89,10 @@ body {
   right: 0;
   transform: translateY(-50%);
   z-index: -1;
+}
+.highLightlink{
+  border: 20px solid transparent;
+  border-image: url('./assets/first-section/icon-img.png') 130 round;
 }
 
 .shopbg {

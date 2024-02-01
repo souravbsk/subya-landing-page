@@ -67,7 +67,8 @@ const Header = () => {
                 
               </NavLink>
             </li>
-            <li className="text-[#6D432F] relative px-3 py-5 headernavlink  tracking-wide font-anton font-semibold leading-7 text-base ">
+            {/* highLightlink */}
+            <li className="text-[#6D432F]  relative  px-3 py-5  headernavlink  tracking-wide font-anton font-semibold leading-7 text-base ">
               <NavLink
                 className=""
                 to="/blog"
@@ -76,7 +77,7 @@ const Header = () => {
                 
               </NavLink>
             </li>
-            <li className="text-[#303030] relative relative z-50 px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base">
+            <li className="text-[#303030]  relative z-50 px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base">
               <NavLink
                 className=" "
                 to="/shop"
