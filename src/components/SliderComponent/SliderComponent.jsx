@@ -29,7 +29,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
         }}
         pagination={true}
         modules={[Pagination, Autoplay]}
-        className="mySwiper relative h-72 md:h-full"
+        className="mySwiper relative lg:h-full md:h-[500px] sm:h-96 h-72"
       >
         <SwiperSlide>
           <div
@@ -63,11 +63,11 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
             className=" flex items-center justify-center h-full bg-current bg-no-repeat bg-cover py-9"
           ></div>
         </SwiperSlide>
-        <div className=" flex items-end absolute bg-[rgb(0 0 0 / 60%)] md:px-20 px-4 top-0 z-50 left-0 right-0 bottom-0 w-full space-y-3 md:space-y-5">
+        <div className=" flex items-end absolute bg-[rgb(0 0 0 / 60%)] lg:px-20 md:px-8 px-4 top-0 z-50 left-0 right-0 bottom-0 w-full space-y-3 md:space-y-5">
           <div>
             <h2
               data-aos="fade-up"
-              className="capitalize mb-3 text-white font-anton  font-semibold text-xl md:text-6xl  "
+              className="capitalize mb-3 text-white font-anton  font-semibold text-xl md:text-6xl sm:text-5xl  "
             >
               Unlocking e-commerce <br /> for artisans with 
               <span className="font-extrabold"> ONDC</span>

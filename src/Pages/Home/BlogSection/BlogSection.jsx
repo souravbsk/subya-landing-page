@@ -5,7 +5,7 @@ import BlogsContainer from './BlogsContainer';
 
 const BlogSection = () => {
     return (
-        <div className=" peraBg py-16">
+        <div className=" peraBg py-8 md:py-16">
       <div className='container'>
       <SectionTitle title="Latest Posts"></SectionTitle>
          <BlogsContainer></BlogsContainer>

@@ -45,15 +45,15 @@ const AwardTab = () => {
   return (
     <div
       data-aos="fade-up"
-      className="shadow-md bg-white px-12 py-12 rounded-3xl"
+      className="shadow-md bg-white lg:p-12 px-6 py-10  rounded-3xl"
     >
-      <div className="grid  gap-8 items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+      <div className="grid  gap-4 md:gap-8 items-center lg:grid-cols-4 md:grid-cols-3 grid-cols-1">
         {awardsItems.map((item, index) => (
           <div
             key={index}
             className="flex shadow rounded-lg overflow-hidden  flex-col items-center justify-between"
           >
-            <figure className="h-64 w-full">
+            <figure className="md:h-64 w-full">
               <img
                 className="h-full  w-full"
                 src={item.img}

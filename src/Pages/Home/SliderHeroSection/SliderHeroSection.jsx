@@ -9,16 +9,16 @@ const SliderHeroSection = () => {
       <div className="lg:w-[70%] w-full ">
         <BannerSlider></BannerSlider>
       </div>
-      <div className="lg:w-1/2 flex md:flex-col w-full ">
+      <div className="lg:w-1/2 flex lg:flex-col md:flex-row w-full ">
         <div className="w-full flex flex-col md:flex-row">
-          <div className=" space-y-4 flex-1 bg-[#F6F6F6]  ">
-            <div className="py-6 md:py-16 flex flex-col justify-center items-center  px-4 md:px-16 space-y-3">
+          <div className=" space-y-4 flex-1 flex items-center justify-center bg-[#F6F6F6]  ">
+            <div className="py-6 lg:py-16 flex flex-col justify-center items-center  px-4 md:px-10 space-y-3">
               <figure data-aos="zoom-in">
-                <img src={icon} className=" h-16 md:h-24" alt="" />
+                <img src={icon} className=" h-12 md:h-24" alt="" />
               </figure>
-              <h3 data-aos="fade-left" className="  md:text-3xl font-anton text-center md:text-left font-extrabold text-[#303030]">
+              <h3 data-aos="fade-left" className="  lg:text-3xl md:text-2xl text-xl font-anton text-center lg:text-left font-extrabold text-[#303030]">
                 Join the movement <br />{" "}
-                <Link className="font-extrabold md:text-6xl underline">
+                <Link className="font-extrabold lg:text-6xl md:text-5xl underline">
                   How?
                 </Link>
               </h3>
@@ -30,7 +30,7 @@ const SliderHeroSection = () => {
           style={{
             backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)) , url(${bgimage})`,
           }}
-          className="w-full bg-cover bg-center  md:h-[350px] flex items-center justify-center"
+          className="w-full bg-cover bg-center md:h-[350px] flex items-center justify-center"
         >
           <Link to="#">
             <h2  className="font-semibold text-white md:text-4xl font-anton">

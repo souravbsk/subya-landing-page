@@ -10,7 +10,7 @@ const Header = () => {
   
   return (
     <header data-aos="fade-down" className="fixed left-0 right-0  top-0 z-50">
-      <nav className="flex bg-white shadow-md rounded-b-3xl backdrop-blur-2xl py-4 px-4 md:px-14  items-center justify-between">
+      <nav className="flex bg-white shadow-md rounded-b-3xl backdrop-blur-2xl py-4 px-4 lg:px-14 md:px-8  items-center justify-between">
         <div className="flex lg:w-auto w-full gap-4 items-center justify-between">
           <div className="md:inline  flex items-center justify-between w-full ">
             <Link className="block w-full" to="/">
@@ -29,7 +29,7 @@ const Header = () => {
           </div>
 
           <ul
-            className={`flex md:w-auto w-full md:bg-transparent bg-white md:static absolute md:flex-row  flex-col md:items-center  gap-2 left-0 md:px-0 px-14 ${
+            className={`flex md:w-auto w-full md:bg-transparent bg-white md:static absolute md:flex-row  flex-col md:items-center  gap-2 left-0 md:px-0 lg:px-0 px-14 ${
               isNavShow ? "top-24" : "-top-[500px]"
             }`}
           >
@@ -68,7 +68,7 @@ const Header = () => {
               </NavLink>
             </li>
             {/* highLightlink */}
-            <li className="text-[#6D432F]  relative  px-3 py-5  headernavlink  tracking-wide font-anton font-semibold leading-7 text-base ">
+            <li className="text-[#6D432F]  relative   px-3 py-5  headernavlink  tracking-wide font-anton font-semibold leading-7 text-base ">
               <NavLink
                 className=""
                 to="/blog"

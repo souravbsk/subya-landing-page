@@ -7,12 +7,12 @@ const SolutionSection = () => {
   return (
     <div
       id="journey"
-      className="flex pt-16  bg-white items-center flex-col lg:flex-row justify-between"
+      className="flex flex-col lg:flex-row lg:pt-20  gap-6  bg-white items-center  justify-between"
     >
-      <div className="md:w-[50%] w-full">
-        <div data-aos="fade-up" className="  ">
+      <div className="lg:w-[50%] lg:py-20 md:py-16 py-6 pt-12 w-full">
+        <div data-aos="fade-up" className="lg:px-4 md:px-16 px-5" >
           
-            <h2  className="text-[#303030] mb-6 font-medium text-center font-anton leading-tight text-4xl">
+            <h2  className="text-[#303030] mb-3 md:mb-6 font-medium text-center font-anton leading-tight md:text-4xl text-xl ">
               An <span className="text-[#7A5542] font-semibold">AI Powered Application</span> for the Artisans to enter in to the
               world of E-commerce
             </h2>
@@ -24,8 +24,8 @@ const SolutionSection = () => {
         </div>
       </div>
       <div data-aos="fade-up"
-     data-aos-duration="3000" className="md:w-[50%] s  w-full ">
-        <img  className="w-full " src={solutionImg} alt="" />
+     data-aos-duration="3000" className="lg:w-[50%]  md:pt-0  w-full ">
+        <img  className="lg:w-full md:w-10/12 mx-auto" src={solutionImg} alt="" />
       </div>
     </div>
   );

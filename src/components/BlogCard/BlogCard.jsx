@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 const BlogCard = ({ imageUrl, category, title, content, link,date }) => {
   return (
-    <div data-aos="flip-left" className="w-full flex flex-col justify-between relative max-w-full bg-white  border rounded-lg hover:shadow-md duration-300 overflow-hidden ">
+    <div data-aos="flip-left" className="w-full h-auto md:h-[600px] flex flex-col justify-between relative max-w-full bg-white  border rounded-lg hover:shadow-md duration-300 overflow-hidden ">
       <div>
         <img
           src={imageUrl}
           alt="Card img"
-          className="object-cover object-center w-full h-60"
+          className="object-cover object-center h-60"
         />
         <div className="flex flex-col justify-between px-4 mb-4 pt-6 ">
           <div>
@@ -20,11 +20,11 @@ const BlogCard = ({ imageUrl, category, title, content, link,date }) => {
             </Link>
             <Link
               to="#"
-              className="block mb-4 duration-300 text-xl font-black leading-tight hover:underline hover:text-[#7A5542]"
+              className="block mb-2 md:mb-4 duration-300 md:text-xl font-black leading-tight hover:underline hover:text-[#7A5542]"
             >
               {title}
             </Link>
-            <p className="font-heebo mb-4 text-[#303030] text-base">
+            <p className="font-heebo mb-2 md:mb-4 text-[#303030] text-base">
               {content}
             </p>
           </div>

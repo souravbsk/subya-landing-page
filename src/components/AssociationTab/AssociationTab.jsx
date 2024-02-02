@@ -21,15 +21,15 @@ const AssociationTab = () => {
   return (
     <div
       data-aos="fade-up"
-      className="shadow-md bg-white px-12 py-12 rounded-3xl"
+      className="shadow-md bg-white lg:p-12 px-6 py-10  rounded-3xl"
     >
       <div className="grid  gap-8 items-center md:grid-cols-3 sm:grid-cols-2">
         {associationItems.map((item, index) => (
           <div
             key={index}
-            className="flex p-4 shadow rounded-lg overflow-hidden  flex-col items-center justify-between"
+            className="flex md:p-4 shadow rounded-lg overflow-hidden  flex-col items-center justify-between"
           >
-            <figure className="w-52 flex items-center">
+            <figure className="md:w-52 flex items-center">
               <img
                 className=""
                 src={item.img}

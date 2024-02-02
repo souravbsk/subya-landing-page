@@ -7,7 +7,7 @@ const PieChartSection = () => {
     <div id="journey" className="">
       <div className=" w-full ">
         <div className="w-full flex flex-col md:flex-row">
-          <div className=" flex-1">
+          <div className="flex-1">
             <img
               src={bannerImg}
               className="w-full object-cover object-left h-full"
@@ -15,9 +15,9 @@ const PieChartSection = () => {
             />
           </div>
           <div className=" flex-1 ">
-            <div className="py-10 flex  flex-col h-full items-center justify-center  px-8 md:px-6 bg-[#f9ebe0] space-y-3">
+            <div className="lg:py-10 md:py-16 py-10 flex  flex-col h-full items-center justify-center sm:px-3 px-0 md:px-6 bg-[#f9ebe0] space-y-3">
               <div data-aos="fade-up" className="text-center ">
-                <p className="font-heebo mb-2 font-extrabold text-[#5D2F18] text-5xl">
+                <p className="font-heebo mb-2 font-extrabold text-[#5D2F18] lg:text-5xl md:text-3xl text-2xl ">
                   20 Crore Indians depend on Handloom and Handicraft for earning
                   Livelihood
                 </p>
