@@ -18,6 +18,7 @@ const TimeLine = () => {
 
   return (
     <div
+      id="journey"
       className="flex flex-col md:flex-row py-20 items-center peraBg
      justify-center gap-4"
     >

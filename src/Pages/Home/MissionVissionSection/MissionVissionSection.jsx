@@ -19,7 +19,7 @@ const MissionVissionSection = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between">
+    <div id="vision" className="flex flex-col lg:flex-row justify-between">
       <div className=" w-full ">
         <div className="px-4 py-8 md:p-20  bg-[#7A5542]">
           <Swiper

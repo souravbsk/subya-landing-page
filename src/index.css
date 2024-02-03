@@ -103,7 +103,9 @@ body {
   transition: all 0.5s ease-in;
 }
 
-
+.text-shadow{
+  text-shadow: 1px 1px 10px #5D2F18,1px 1px 10px #5D2F18;
+}
 
 
 .progress {

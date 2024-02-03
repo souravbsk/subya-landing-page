@@ -8,7 +8,7 @@ const BlogCard = ({ imageUrl, category, title, content, link,date }) => {
         <img
           src={imageUrl}
           alt="Card img"
-          className="object-cover object-center h-60"
+          className="object-cover w-full object-center h-60"
         />
         <div className="flex flex-col justify-between px-4 mb-4 pt-6 ">
           <div>

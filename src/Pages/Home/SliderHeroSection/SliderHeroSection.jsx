@@ -30,7 +30,7 @@ const SliderHeroSection = () => {
           style={{
             backgroundImage: `linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)) , url(${bgimage})`,
           }}
-          className="w-full bg-cover bg-center md:h-[350px] flex items-center justify-center"
+          className="w-full bg-cover bg-center md:h-full py-24 flex items-center justify-center"
         >
           <Link to="#">
             <h2  className="font-semibold text-white md:text-4xl font-anton">

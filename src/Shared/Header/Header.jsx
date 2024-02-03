@@ -4,26 +4,32 @@ import { FaBars, FaSearch } from "react-icons/fa";
 import blacklogo from "../../assets/shabasa-logo.svg";
 import NavSideBar from "../NavSideBar/NavSideBar";
 import { MdOutlineClose } from "react-icons/md";
+import { Link as AnchorLink } from "react-scroll";
+
 const Header = () => {
   const [isSidebar, setSideBar] = useState(false);
   const [isNavShow, setNavShow] = useState(false);
-  
+
   return (
     <header data-aos="fade-down" className="fixed left-0 right-0  top-0 z-50">
       <nav className="flex bg-white shadow-md rounded-b-3xl backdrop-blur-2xl py-4 px-4 lg:px-14 md:px-8  items-center justify-between">
         <div className="flex lg:w-auto w-full gap-4 items-center justify-between">
           <div className="md:inline  flex items-center justify-between w-full ">
             <Link className="block w-full" to="/">
-              <img className="h-[68.73px]  w-[187.5px]" src={blacklogo} alt="" />
+              <img
+                className="h-[68.73px]  w-[187.5px]"
+                src={blacklogo}
+                alt=""
+              />
             </Link>
             <button
               onClick={() => setNavShow(!isNavShow)}
               className="md:hidden block"
-              >
+            >
               {isNavShow ? (
                 <MdOutlineClose size={26} className="font-bold" />
-                ) : (
-                  <FaBars size={26}></FaBars>
+              ) : (
+                <FaBars size={26}></FaBars>
               )}
             </button>
           </div>
@@ -34,57 +40,78 @@ const Header = () => {
             }`}
           >
             <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base ">
-              <NavLink
+              <AnchorLink
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={1000}
                 to="/"
-                >
+              >
                 Home
-                
-              </NavLink>
+              </AnchorLink>
             </li>
             <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base ">
-              <NavLink
-                to="/journey"
+              <AnchorLink
+                offset={500}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="journey"
               >
                 Journey
-                
-              </NavLink>
+              </AnchorLink>
             </li>
             <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base ">
-              <NavLink
-                className=""
-                to="/donations"
-                >
+              <AnchorLink
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="vision"
+              >
                 Our Vision
-                
-              </NavLink>
+              </AnchorLink>
             </li>
-            <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base">
-              <NavLink
-                className=" "
-                to="/events"
-                >
-                Solution
-                
-              </NavLink>
-            </li>
+
             {/* highLightlink */}
             <li className="text-[#6D432F]  relative   px-3 py-5  headernavlink  tracking-wide font-anton font-semibold leading-7 text-base ">
-              <NavLink
-                className=""
-                to="/blog"
-                >
+             
+
+              <AnchorLink
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="artisan-wizard"
+              >
                 Artisans’ Wizard
-                
-              </NavLink>
+
+              </AnchorLink>
+
+
+
             </li>
             <li className="text-[#303030]  relative z-50 px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base">
-              <NavLink
-                className=" "
-                to="/shop"
+              <AnchorLink
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="shop"
               >
                 Shop
-                
-              </NavLink>
+              </AnchorLink>
+            </li>
+            <li className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base">
+              <AnchorLink
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="blog"
+              >
+                Blog
+              </AnchorLink>
             </li>
           </ul>
         </div>
@@ -94,10 +121,8 @@ const Header = () => {
             <button
               className="text-[#303030] relative px-3 py-5 headernavlink  tracking-widest font-anton font-semibold leading-7 text-base "
               onClick={() => setSideBar(!isSidebar)}
-              >
-              <>
-                Contact Us
-              </>
+            >
+              <>Contact Us</>
             </button>
           </li>
         </ul>
@@ -109,7 +134,7 @@ const Header = () => {
         className={`fixed top-0  duration-500 h-screen w-1/4 bg-[#F6F6F6] ${
           isSidebar ? "right-0" : "-right-[600px]"
         }`}
-        >
+      >
         <NavSideBar isSidebar={isSidebar} setSideBar={setSideBar}></NavSideBar>
       </div>
     </header>

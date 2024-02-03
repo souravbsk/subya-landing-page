@@ -5,7 +5,7 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const StoreSection = () => {
   return (
-    <section className="py-8 md:py-16 peraBg">
+    <section id="shop" className="py-8 md:py-16 peraBg">
       <div className="container">
       <SectionTitle title="Sabhyasha Store"></SectionTitle>
         <ShopProduct></ShopProduct>
