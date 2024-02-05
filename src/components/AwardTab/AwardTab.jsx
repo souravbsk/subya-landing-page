@@ -1,19 +1,17 @@
 import React from "react";
-import img1 from "../../assets/awards/Picture1.webp";
-import img2 from "../../assets/awards/Picture5.webp";
-import img3 from "../../assets/awards/Picture6.webp";
-import img4 from "../../assets/awards/Picture7.webp";
-import img5 from "../../assets/awards/Picture8.webp";
-import img6 from "../../assets/awards/Picture9.webp";
-import img7 from "../../assets/awards/Picture10.webp";
-import img8 from "../../assets/awards/Picture11.webp";
-import img9 from "../../assets/awards/Picture12.webp";
+import img1 from "../../assets/awards/image1.webp";
+import img2 from "../../assets/awards/image2.webp";
+import img3 from "../../assets/awards/image3.webp";
+import img4 from "../../assets/awards/image4.webp";
+import img5 from "../../assets/awards/image5.webp";
+import img6 from "../../assets/awards/image6.webp";
+import img7 from "../../assets/awards/image7.webp";
 import { Link } from "react-router-dom";
 import "./Awards.css";
 const awardsItems = [
   {
     img: img1,
-    caption: `Selected as <u><a href="https://www.linkedin.com/feed/hashtag/?keywords=top20&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A6986144742174568448">#Top20</a></u> Startups in the <u><a href="https://www.linkedin.com/feed/hashtag/?keywords=fundstack2&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A6986144742174568448">#Fundstack</a></u> 3.0 2023 event by <u><a href="https://www.linkedin.com/feed/hashtag/?keywords=startupodisha&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A6986144742174568448">#StartupOdisha</a></u>`,
+    caption: "Selected as Top20 Startup in FundStack3.0 2023 held by Startup Odisha",
   },
   {
     img: img2,
@@ -33,12 +31,6 @@ const awardsItems = [
     img: img7,
     caption: "Selected in the Wadhwani Lift-off  8.1 Program",
   },
-  {
-    img: img8,
-  },
-  {
-    img: img9,
-  },
 ];
 
 const AwardTab = () => {
@@ -47,13 +39,13 @@ const AwardTab = () => {
       data-aos="fade-up"
       className="shadow-md bg-white lg:p-12 px-6 py-10  rounded-3xl"
     >
-      <div className="grid  gap-4 md:gap-8 items-center lg:grid-cols-4 md:grid-cols-3 grid-cols-1">
+      <div className="grid  gap-4 md:gap-3  lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-3 grid-cols-2">
         {awardsItems.map((item, index) => (
           <div
             key={index}
-            className="flex shadow rounded-lg overflow-hidden  flex-col items-center justify-between"
+            className="flex shadow rounded-lg overflow-hidden  flex-col items-center "
           >
-            <figure className="md:h-64 w-full">
+            <figure className="w-full">
               <img
                 className="h-full  w-full"
                 src={item.img}
@@ -62,7 +54,7 @@ const AwardTab = () => {
             </figure>
             <p
               dangerouslySetInnerHTML={{ __html: item?.caption }}
-              className="text-center p-4  text-[#7A5542]"
+              className="text-center text-sm py-4  text-[#7A5542]"
             ></p>
           </div>
         ))}

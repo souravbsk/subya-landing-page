@@ -17,7 +17,7 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
   });
 
   return (
-    <div className="border-l  px-14 pb-9 pt-32">
+    <div className="border-l  px-14 pb-9 pt-20">
       <div className="text-right" onClick={() => setSideBar(false)}>
         <button>
           <MdOutlineClose size={26} className="font-bold" />
@@ -28,10 +28,10 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
           HELLO!
         </h1>
         <p className="text-base font-heebo text-[#303030]"></p>
-        <h3 className="text-xl py-8 font-heebo font-bold text-[#303030]">
+        <h3 className="text-xl py-4 font-heebo font-bold text-[#303030]">
           Contact Us
         </h3>
-        <ul className=" space-y-4">
+        <ul className=" space-y-2">
           <li>
             <p>
               <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong> 506, G Block, Utkal Vatika

@@ -73,7 +73,7 @@ body {
 
 .headernavlink:hover {
   background-image: url("./assets/first-section/icon-img.png");
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 2;
@@ -328,8 +328,9 @@ body {
   background: linear-gradient(45deg, rgba(93, 47, 24, 0.912), rgba(122, 85, 66, 0.468)), url("./assets/footer/footerimage.webp");
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: contain;
+  background-size: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
   
 }
 
@@ -402,3 +403,14 @@ body {
 }
 
 
+@media only screen and (max-width: 625px){
+  .masked-text-wrapper h2 {
+    font-size: 56px;
+  }
+  .masked-text-wrapper{
+    --_box-width: 18rem;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    display: none !important;
+  }
+}

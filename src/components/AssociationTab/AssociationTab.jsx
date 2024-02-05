@@ -1,7 +1,9 @@
 import React from "react";
-import img1 from "../../assets/associationimages/Picture2.webp";
-import img2 from "../../assets/associationimages/Picture3.webp";
-import img3 from "../../assets/associationimages/Picture4.webp";
+import img1 from "../../assets/associationimages/image1.webp";
+import img2 from "../../assets/associationimages/image2.webp";
+import img3 from "../../assets/associationimages/image3.webp";
+import img4 from "../../assets/associationimages/image4.webp";
+import img5 from "../../assets/associationimages/image5.webp";
 const associationItems = [
   {
     img: img1,
@@ -15,6 +17,12 @@ const associationItems = [
     img: img3,
     caption: "MOU with  KIIT TBI  - SFURTI  For Cluster Collaboration",
   },
+  {
+    img: img4,
+  },
+  {
+    img: img5,
+  },
 ];
 
 const AssociationTab = () => {
@@ -23,18 +31,14 @@ const AssociationTab = () => {
       data-aos="fade-up"
       className="shadow-md bg-white lg:p-12 px-6 py-10  rounded-3xl"
     >
-      <div className="grid  gap-8 items-center md:grid-cols-3 sm:grid-cols-2">
+      <div className="grid  gap-8 md:grid-cols-4 sm:grid-cols-3 grid-cols-2">
         {associationItems.map((item, index) => (
           <div
             key={index}
-            className="flex md:p-4 shadow rounded-lg overflow-hidden  flex-col items-center justify-between"
+            className="flex md:p-4 shadow rounded-lg overflow-hidden  flex-col items-center "
           >
             <figure className="md:w-52 flex items-center">
-              <img
-                className=""
-                src={item.img}
-                alt={`Image ${index + 1}`}
-              />
+              <img className="" src={item.img} alt={`Image ${index + 1}`} />
             </figure>
             <p
               dangerouslySetInnerHTML={{ __html: item?.caption }}

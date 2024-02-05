@@ -13,7 +13,7 @@ const Footer = () => {
     <>
       <footer
         data-aos="flip-up"
-        className=" overflow-hidden rounded-t-[60px] footerimg pt-28"
+        className=" overflow-hidden md:rounded-t-[60px] rounded-t-3xl footerimg lg:pt-28 pt-8"
       >
         <div className="container mb-9">
           <div class="  masked-text-wrapper">
@@ -22,9 +22,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="container lg:max-w-[1380px]">
-          <div className=" backdrop-brightness-75 rounded-3xl text-gray-300 px-8 py-12 grid grid-cols-4  gap-4">
+          <div className=" backdrop-brightness-75 rounded-3xl text-gray-300 md:px-8 px-3 md:py-12 py-6 grid lg:grid-cols-4 grid-cols-1  gap-4">
             <div>
-              <h3 className="text-2xl mb-[30px] text-white font-bold">
+              <h3 className="md:text-2xl text-lg md:mb-[30px] mb-3 text-white font-bold">
                 Who We Are
               </h3>
               <p>
@@ -35,8 +35,8 @@ const Footer = () => {
                 <Link to="mailto:care@sabhyasha.com">care@sabhyasha.com</Link>
               </p>
             </div>
-            <div className="col-span-2">
-              <h3 className="text-2xl mb-[30px] text-white font-bold">
+            <div className="md:col-span-2">
+              <h3 className="md:text-2xl text-lg md:mb-[30px] mb-3 text-white font-bold">
                 Find Out What We Have
               </h3>
               <p>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             
             <div>
-              <h3 className="text-2xl mb-[30px] text-white font-bold">
+              <h3 className="md:text-2xl text-lg md:mb-[30px] mb-3 text-white font-bold">
                 Find Out What We Have
               </h3>
               <figure className="bg-[#FFFFFF]">
@@ -59,39 +59,39 @@ const Footer = () => {
         </div>
         <div className="backdrop-brightness-75 py-7 mt-12">
           <div className="container">
-            <ul className="flex items-center text-white justify-center">
-              <li>
-                <Link className="py-2 px-3" to="/">
+            <ul className="flex md:flex-nowrap  flex-wrap items-center text-white justify-center">
+              <li className="mb-2">
+                <Link className=" px-3" to="/">
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link className="py-2 px-3 border-s" to="/">
+              <li className="mb-2">
+                <Link className=" px-3 border-s" to="/">
                   Privacy Policy
                 </Link>
               </li>
-              <li>
-                <Link className="py-2 px-3 border-s" to="/">
+              <li className="mb-2">
+                <Link className=" px-3 border-s" to="/">
                   Return Policy
                 </Link>
               </li>
-              <li>
-                <Link className="py-2 px-3 border-s" to="/">
+              <li className="mb-2">
+                <Link className=" px-3 border-s" to="/">
                   Shipping Policy
                 </Link>
               </li>
-              <li>
-                <Link className="py-2 px-3 border-s" to="/">
+              <li className="mb-2">
+                <Link className=" px-3 border-s " to="/">
                   Terms and Conditions
                 </Link>
               </li>
-              <li>
-                <Link className="py-2 px-3 border-s" to="/">
+              <li className="mb-2">
+                <Link className=" px-3 border-s" to="/">
                   Blog
                 </Link>
               </li>
             </ul>
-            <div className="flex mt-8 items-center justify-between gap-3">
+            <div className="flex flex-wrap md:mt-8 mt-3 items-center justify-between gap-3">
               <ul className="flex items-center gap-4">
                 <li>
                   <img

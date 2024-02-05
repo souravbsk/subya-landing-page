@@ -7,7 +7,7 @@ const SolutionPPtContent = () => {
       <figure>
         <img className="md:w-full w-4/6 mx-auto h-full" src={artisanslogo} alt="" />
       </figure>
-      <p className="font-heebo text-center font-medium text-[#7A5542] md:px-16 px-0 sm:text-3xl text-xl">
+      <p className="font-heebo text-center font-medium text-[#7A5542] md:px-16 px-0 sm:text-[26px] text-xl">
         One App, Many Storefronts and Many Opportunities
       </p>
       <figure>
