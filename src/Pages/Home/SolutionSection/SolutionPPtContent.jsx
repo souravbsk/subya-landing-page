@@ -5,10 +5,14 @@ const SolutionPPtContent = () => {
   return (
     <div className=" space-y-3 md:space-y-6 flex flex-col justify-center items-center">
       <figure>
-        <img className="md:w-full w-4/6 mx-auto h-full" src={artisanslogo} alt="" />
+        <img
+          className="md:w-full w-4/6 mx-auto h-full"
+          src={artisanslogo}
+          alt=""
+        />
       </figure>
-      <p className="font-heebo text-center font-medium text-[#7A5542] md:px-16 px-0 sm:text-[26px] text-xl">
-        One App, Many Storefronts and Many Opportunities
+      <p className="font-heebo leading-10 text-center font-medium text-[#7A5542] md:px-16 px-0 sm:text-[26px] text-xl">
+        One App, Many Storefronts and <br /> Many Opportunities
       </p>
       <figure>
         <img className="md:w-60 w-36 h-full" src={powerdby} alt="" />

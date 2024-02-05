@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaSearch } from "react-icons/fa";
 import blacklogo from "../../assets/shabasa-logo.svg";
 import NavSideBar from "../NavSideBar/NavSideBar";
 import { MdOutlineClose } from "react-icons/md";
 import { Link as AnchorLink } from "react-scroll";
+import { SideBarContext } from "../../Context/SideBarProvider";
 
 const Header = () => {
-  const [isSidebar, setSideBar] = useState(false);
+  const { isSidebar, setSideBar } = useContext(SideBarContext);
   const [isNavShow, setNavShow] = useState(false);
 
   return (
@@ -46,6 +47,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 to="/"
+                className="cursor-pointer"
               >
                 Home
               </AnchorLink>
@@ -57,6 +59,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 to="journey"
+                className="cursor-pointer"
               >
                 Journey
               </AnchorLink>
@@ -68,6 +71,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 to="vision"
+                className="cursor-pointer"
               >
                 Our Vision
               </AnchorLink>
@@ -75,21 +79,16 @@ const Header = () => {
 
             {/* highLightlink */}
             <li className="text-[#6D432F]  relative   px-3 md:py-5 py-3  headernavlink bg-center tracking-wide font-anton font-semibold leading-7 text-base ">
-             
-
               <AnchorLink
                 offset={-100}
                 spy={true}
                 smooth={true}
                 duration={500}
                 to="artisan-wizard"
+                className="cursor-pointer"
               >
                 Artisans’ Wizard
-
               </AnchorLink>
-
-
-
             </li>
             <li className="text-[#303030]  relative z-50 px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base">
               <AnchorLink
@@ -98,17 +97,19 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 to="shop"
+                className="cursor-pointer"
               >
                 Shop
               </AnchorLink>
             </li>
-            <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base">
+            <li className="text-[#303030]  relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base">
               <AnchorLink
                 offset={-100}
                 spy={true}
                 smooth={true}
                 duration={500}
                 to="blog"
+                className="cursor-pointer"
               >
                 Blog
               </AnchorLink>
@@ -116,7 +117,6 @@ const Header = () => {
           </ul>
         </div>
         <ul className="lg:flex hidden items-center gap-6">
-          <li></li>
           <li>
             <button
               className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base "
@@ -131,8 +131,8 @@ const Header = () => {
       {/* side bar  */}
 
       <div
-        className={`fixed top-0  duration-500 h-screen w-[30%] bg-[#F6F6F6] ${
-          isSidebar ? "right-0" : "-right-[600px]"
+        className={`fixed top-0  duration-500 h-screen lg:w-[30%] w-[90%] bg-[#F6F6F6] ${
+          isSidebar ? "right-0" : "lg:-right-[600px]  -right-[900px]"
         }`}
       >
         <NavSideBar isSidebar={isSidebar} setSideBar={setSideBar}></NavSideBar>

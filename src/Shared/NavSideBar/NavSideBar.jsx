@@ -17,18 +17,18 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
   });
 
   return (
-    <div className="border-l  px-14 pb-9 pt-20">
+    <div className="border-l  md:px-14 px-4 pb-9 pt-20">
       <div className="text-right" onClick={() => setSideBar(false)}>
         <button>
           <MdOutlineClose size={26} className="font-bold" />
         </button>
       </div>
       <div>
-        <h1 className="text-5xl font-anton font-extrabold text-[#303030] mb-3">
+        <h1 className="md:text-5xl text-4xl font-anton font-extrabold text-[#303030] mb-3">
           HELLO!
         </h1>
         <p className="text-base font-heebo text-[#303030]"></p>
-        <h3 className="text-xl py-4 font-heebo font-bold text-[#303030]">
+        <h3 className="md:text-xl text-lg py-4 font-heebo font-bold text-[#303030]">
           Contact Us
         </h3>
         <ul className=" space-y-2">
@@ -48,7 +48,7 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
         <h3 className="text-xl py-6 font-heebo font-bold text-[#303030]">
           Follow us
         </h3>
-        <SocialLinks classNameli="backdrop-brightness-90"></SocialLinks>
+        <SocialLinks classNameul="md:flex-nowrap flex-wrap  " classNameli="backdrop-brightness-90 "></SocialLinks>
       </div>
     </div>
   );

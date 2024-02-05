@@ -19,9 +19,11 @@ const associationItems = [
   },
   {
     img: img4,
+    caption: "AIC Nalanda",
   },
   {
     img: img5,
+    caption: "Incubation Centre of Sri Sri University",
   },
 ];
 
@@ -31,7 +33,7 @@ const AssociationTab = () => {
       data-aos="fade-up"
       className="shadow-md bg-white lg:p-12 px-6 py-10  rounded-3xl"
     >
-      <div className="grid  gap-8 md:grid-cols-4 sm:grid-cols-3 grid-cols-2">
+      <div className="grid  gap-4 md:grid-cols-4 sm:grid-cols-3 grid-cols-1">
         {associationItems.map((item, index) => (
           <div
             key={index}
