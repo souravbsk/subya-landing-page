@@ -13,12 +13,16 @@ const Main = () => {
   return (
     <div className="bg-[#F6F6F6] overflow-hidden">
       <Header></Header>
-      <Outlet></Outlet>
+      <div className="mt-20">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
-      <ScrollToTop 
-      className="!rounded-full flex items-center justify-center !bg-[#F0E8F8]"
-      viewBox="0 0 24 24"
-      svgPath="m12 6.586-8.707 8.707 1.414 1.414L12 9.414l7.293 7.293 1.414-1.414L12 6.586z" smooth />
+      <ScrollToTop
+        className="!rounded-full flex items-center justify-center !bg-[#F0E8F8]"
+        viewBox="0 0 24 24"
+        svgPath="m12 6.586-8.707 8.707 1.414 1.414L12 9.414l7.293 7.293 1.414-1.414L12 6.586z"
+        smooth
+      />
     </div>
   );
 };

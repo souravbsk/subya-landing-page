@@ -11,7 +11,7 @@ import TimeLine from "./TimeLine/TimeLine";
 
 const Home = () => {
   return (
-    <div className="mt-20">
+    <div className="">
       <SliderHeroSection></SliderHeroSection>
       <SecondSection></SecondSection>
       <TimeLine></TimeLine>

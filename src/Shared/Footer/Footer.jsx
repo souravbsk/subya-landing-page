@@ -11,9 +11,9 @@ const Footer = () => {
         className=" overflow-hidden md:rounded-t-[60px] rounded-t-3xl footerimg lg:pt-28 pt-8"
       >
         <div className="container mb-9">
-          <div class="  masked-text-wrapper">
-            <h2 class="text-default ">Sabhyasha</h2>
-            <h2 class="text-underneath ">Sabhyasha</h2>
+          <div className="  masked-text-wrapper">
+            <h2 className="text-default ">Sabhyasha</h2>
+            <h2 className="text-underneath ">Sabhyasha</h2>
           </div>
         </div>
         <div className="container lg:max-w-[1380px]">
