@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const TermConditions = () => {
   return (
@@ -754,6 +754,7 @@ at <Link to="mailto:care@sabhyasha.com." className="font-bold text-[#7A5542]">ca
           </ul>
         </div>
       </div>
+      <ScrollRestoration />
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
@@ -263,6 +263,8 @@ const PrivacyPolicy = () => {
           </p>
         </div>
       </div>
+      <ScrollRestoration />
+
     </section>
   );
 };

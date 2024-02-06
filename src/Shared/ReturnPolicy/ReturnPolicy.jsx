@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const ReturnPolicy = () => {
   return (
@@ -144,6 +144,8 @@ const ReturnPolicy = () => {
           </p>
         </div>
       </div>
+      <ScrollRestoration />
+
     </section>
   );
 };
