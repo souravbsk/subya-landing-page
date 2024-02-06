@@ -8,6 +8,7 @@ import StoreSection from "./StoreSection/StoreSection";
 import BlogSection from "./BlogSection/BlogSection";
 import TabListSection from "./TabListSection/TabListSection";
 import TimeLine from "./TimeLine/TimeLine";
+import { ScrollRestoration } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <StoreSection></StoreSection>
       <BlogSection></BlogSection>
       <TabListSection></TabListSection>
+      <ScrollRestoration />
     </div>
   );
 };

@@ -3,33 +3,19 @@ import { FaArrowAltCircleDown, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const TeamCard = ({ image, title, designation, link, pera }) => {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
   return (
     <div className="relative group">
       <div
         data-aos="fade-right"
         className="mb-2 relative  rounded-xl overflow-hidden"
-        onMouseEnter={openModal}
-        onMouseOut={closeModal}
       >
         <img
           className={`md:w-64 md:h-64 w-full cursor-help  mx-auto duration-200 group-hover:opacity-30 `}
           src={image}
           alt="alisha"
         />
-        <div className="absolute -top-96 group-hover:top-0  duration-500 transition-all p-5 text-white bg-[#7A5542]">
-          <p>
-            {pera}
-          </p>
+        <div className="absolute -bottom-96 group-hover:bottom-0  duration-500 transition-all p-5 text-white bg-[#7A5542]">
+          <p>{pera}</p>
         </div>
       </div>
       <div className="text-center">
@@ -45,17 +31,6 @@ const TeamCard = ({ image, title, designation, link, pera }) => {
           </Link>
         </ul>
       </div>
-
-      {/* {isModalOpen && pera && (
-        <div className="fixed z-40 left-1/2 transform -translate-x-1/2 -top-32">
-          <div className="relative bg-white p-8 rounded-3xl shadow-md">
-            <p>{pera}</p>
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-              <div className="w-0 h-0 border-solid border-4 border-t-0 border-r-4 border-l-4 border-b-4"></div>
-            </div>
-          </div>
-        </div>
-      )} */}
     </div>
   );
 };

@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./TimeLine.css";
 import { GiFlowerEmblem } from "react-icons/gi";
+import Button from "../../../components/Button/Button";
 const TimeLine = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
@@ -34,6 +35,9 @@ const TimeLine = () => {
             Ever since its inception, Sabhyasha Retail Tech has been making
             progress in all domains
           </p>
+          <div className="mt-5">
+            <Button link="/our-journey" text="Read More"></Button>
+          </div>
         </div>
       </div>
       <div className="flex-1 h-96 md:h-[500px] overflow-x-hidden overflow-y-auto">
