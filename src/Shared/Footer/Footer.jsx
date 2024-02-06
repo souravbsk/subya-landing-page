@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="container lg:max-w-[1380px]">
           <div className=" backdrop-brightness-75 rounded-3xl text-gray-300 md:px-8 px-3 md:py-12 py-6 grid lg:grid-cols-4 grid-cols-1  gap-6">
             <div>
-              <h3 className="md:text-2xl text-lg md:mb-[30px] mb-3 text-white font-bold">
+              <h3 className="md:text-2xl text-lg md:mb-4 mb-3 text-white font-bold">
                 Who We Are
               </h3>
               <p className="">
@@ -31,7 +31,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="md:col-span-2">
-              <h3 className="md:text-2xl text-lg md:mb-[30px] mb-3 text-white font-bold">
+              <h3 className="md:text-2xl text-lg md:mb-4 mb-3 text-white font-bold">
                 Find Out What We Have
               </h3>
               <p className="">
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="md:text-2xl text-lg md:mb-[30px] mb-3 text-white font-bold">
+              <h3 className="md:text-2xl text-lg md:mb-4 mb-3 text-white font-bold">
                 Recognized By
               </h3>
               <figure>

@@ -38,7 +38,7 @@ const BlogsContainer = () => {
       // }}
       // pagination={true}
       modules={[Pagination, Autoplay, Navigation, Mousewheel]}
-      className="mySwiper  my-12 mb-11"
+      className="mySwiper  mb-11"
     >
       {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-12 gap-6"> */}
       <SwiperSlide>

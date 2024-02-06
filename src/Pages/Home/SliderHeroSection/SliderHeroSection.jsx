@@ -18,10 +18,10 @@ const SliderHeroSection = () => {
               </figure>
               <h3
                 data-aos="fade-left"
-                className=" text-xl md:text-4xl font-anton text-center lg:text-left font-extrabold text-[#303030]"
+                className=" text-xl md:text-4xl font-anton text-center lg:text-left font-semibold text-[#303030]"
               >
                 Join the movement <br />{" "}
-                <Link className="font-extrabold lg:text-6xl md:text-5xl underline">
+                <Link className="font-extrabold  underline">
                   How?
                 </Link>
               </h3>

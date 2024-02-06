@@ -14,24 +14,24 @@ const BlogCard = ({ imageUrl, category, title, content, link,date }) => {
           <div>
             <Link
               to={link}
-              className=" absolute top-4 right-4 mb-4 text-xs font-bold capitalize  bg-black px-2 py-1.5 rounded-full text-white"
+              className="  absolute top-4 right-4 mb-4 text-xs font-medium capitalize  bg-[#7A5542] px-2 py-1.5 rounded-full text-white"
             >
               {category}
             </Link>
             <Link
               to="#"
-              className="block mb-2 md:mb-4 duration-300 md:text-xl font-black leading-tight hover:underline hover:text-[#7A5542]"
+              className="block mb-2 md:mb-4 duration-300 md:text-lg font-bold hover:underline hover:text-[#7A5542]"
             >
               {title}
             </Link>
-            <p className="font-heebo mb-2 md:mb-4 text-[#303030] text-base">
+            <p className="font-heebo mb-2 md:mb-4 text-[#303030] text-sm">
               {content}
             </p>
           </div>
           <div>
             <button
               to={link}
-              className=" flex duration-300 items-center gap-2 pb-1 mt-2 text-base font-black text-[#7A5542] uppercase border-b border-transparent hover:border-[#7A5542]"
+              className=" flex duration-300 items-center gap-2 pb-1 mt-2 text-base font-semibold text-[#7A5542] uppercase border-b border-transparent hover:border-[#7A5542]"
             >
               Read More <FaArrowRight />
             </button>
