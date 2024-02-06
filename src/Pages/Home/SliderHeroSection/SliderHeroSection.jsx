@@ -34,7 +34,7 @@ const SliderHeroSection = () => {
             style={{
               backgroundImage: `url(${bgimage})`,
             }}
-            className=" flex-1 bg-cover bg-center md:h-full md:py-24 py-16 md:px-4 px-2 flex items-center justify-center"
+            className=" flex-1 bg-cover bg-center md:h-full h-full md:py-24 py-16 md:px-4 px-2 flex items-center justify-center"
           >
             <Link to="#">
               <h2 className="font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-white sm:text-2xl text-xl md:text-5xl font-anton">

@@ -37,9 +37,9 @@ const AwardTab = () => {
   return (
     <div
       data-aos="fade-up"
-      className="shadow-md bg-white lg:p-12 px-6 py-10  rounded-3xl"
+    className="shadow-md bg-white lg:p-12 px-6 py-10  rounded-3xl"
     >
-      <div className="grid  gap-4 md:gap-3  lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-3 grid-cols-2">
+      <div className="grid  gap-4 md:gap-3  lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-3 grid-cols-1">
         {awardsItems.map((item, index) => (
           <div
             key={index}

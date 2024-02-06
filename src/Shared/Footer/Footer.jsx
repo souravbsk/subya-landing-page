@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import startuplogo from "../../assets/footer/startuplogo.png";
 
 import FooterLink from "./FooterLink";
-import StartUpImages from "./StartUpImages";
+import startuplogo from "../../assets/footer/startup-logo.webp";
 const Footer = () => {
   return (
     <>
@@ -47,7 +46,9 @@ const Footer = () => {
               <h3 className="md:text-2xl text-lg md:mb-[30px] mb-3 text-white font-bold">
                 Recognized By
               </h3>
-              <StartUpImages></StartUpImages>
+              <figure>
+                <img src={startuplogo} alt="" />
+              </figure>
             </div>
           </div>
         </div>

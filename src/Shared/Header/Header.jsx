@@ -40,7 +40,7 @@ const Header = () => {
               isNavShow ? "top-24" : "-top-[500px]"
             }`}
           >
-            <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base ">
+            <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
               <AnchorLink
                 offset={-100}
                 spy={true}
@@ -52,7 +52,7 @@ const Header = () => {
                 Home
               </AnchorLink>
             </li>
-            <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base ">
+            <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
               <AnchorLink
                 offset={500}
                 spy={true}
@@ -64,7 +64,7 @@ const Header = () => {
                 Journey
               </AnchorLink>
             </li>
-            <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base ">
+            <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
               <AnchorLink
                 offset={-100}
                 spy={true}
@@ -78,7 +78,7 @@ const Header = () => {
             </li>
 
             {/* highLightlink */}
-            <li className="text-[#6D432F]  relative   px-3 md:py-5 py-3  headernavlink bg-center tracking-wide font-anton font-semibold leading-7 text-base ">
+            <li className="text-[#6D432F]  relative   px-3 md:py-5 py-3  headernavlink bg-center tracking-wide font-anton font-medium leading-7 text-base ">
               <AnchorLink
                 offset={-100}
                 spy={true}
@@ -90,7 +90,7 @@ const Header = () => {
                 Artisans’ Wizard
               </AnchorLink>
             </li>
-            <li className="text-[#303030]  relative z-50 px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base">
+            <li className="text-[#303030]  relative z-50 px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base">
               <AnchorLink
                 offset={-100}
                 spy={true}
@@ -102,7 +102,7 @@ const Header = () => {
                 Shop
               </AnchorLink>
             </li>
-            <li className="text-[#303030]  relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base">
+            <li className="text-[#303030]  relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base">
               <AnchorLink
                 offset={-100}
                 spy={true}
@@ -119,7 +119,7 @@ const Header = () => {
         <ul className="lg:flex hidden items-center gap-6">
           <li>
             <button
-              className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base "
+              className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base "
               onClick={() => setSideBar(!isSidebar)}
             >
               <>Contact Us</>

@@ -34,8 +34,9 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
         <ul className=" space-y-2">
           <li>
             <p>
-              <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong> 506, G Block, Utkal Vatika
-              Jharpada Canal Road, Bhubaneswar – 751006
+              <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong> <br className="md:block hidden" /> 506, G
+              Block, Utkal Vatika, <br className="md:block hidden" /> Jharpada Canal Road, Bhubaneswar –
+              751006
             </p>
           </li>
           <li>
@@ -48,7 +49,10 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
         <h3 className="text-xl py-6 font-heebo font-bold text-[#303030]">
           Follow us
         </h3>
-        <SocialLinks classNameul="md:flex-nowrap flex-wrap  " classNameli="backdrop-brightness-90 "></SocialLinks>
+        <SocialLinks
+          classNameul="md:flex-nowrap flex-wrap  "
+          classNameli="backdrop-brightness-90 "
+        ></SocialLinks>
       </div>
     </div>
   );

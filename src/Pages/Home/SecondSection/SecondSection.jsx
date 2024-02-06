@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import bannerImg from "../../../assets/second-section/left-img.jpeg";
+import bannerImg from "../../../assets/second-section/carpetweaving.webp";
 import Button from "../../../components/Button/Button";
 const PieChartSection = () => {
   return (

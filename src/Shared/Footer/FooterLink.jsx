@@ -49,43 +49,46 @@ const FooterLink = () => {
             </Link>
           </li>
         </ul>
-        <div className="flex flex-wrap md:mt-8 mt-3 items-center justify-between gap-3">
-          <ul className="flex items-center gap-4">
-            <li>
-              <img
-                className="w-12 object-contain h-auto"
-                src={upi}
-                alt=""
-                srcset=""
-              />
-            </li>
-            <li>
-              <img
-                className="w-16 object-contain h-auto"
-                src={rupay}
-                alt=""
-                srcset=""
-              />
-            </li>
-            <li>
-              <img
-                className="w-8 object-contain h-auto"
-                src={mastercard}
-                alt=""
-                srcset=""
-              />
-            </li>
-            <li>
-              <img
-                className="w-12 object-contain h-auto"
-                src={visa}
-                alt=""
-                srcset=""
-              />
-            </li>
-          </ul>
-
-          <SocialLinks classNameli="bg-white"></SocialLinks>
+        <div className="flex flex-col md:flex-row md:mt-8 mt-3 items-center justify-between gap-3">
+          <div className="flex-1">
+            <ul className="flex  md:justify-start justify-center items-center gap-4">
+              <li>
+                <img
+                  className="w-12 object-contain h-auto"
+                  src={upi}
+                  alt=""
+                  srcset=""
+                />
+              </li>
+              <li>
+                <img
+                  className="w-16 object-contain h-auto"
+                  src={rupay}
+                  alt=""
+                  srcset=""
+                />
+              </li>
+              <li>
+                <img
+                  className="w-8 object-contain h-auto"
+                  src={mastercard}
+                  alt=""
+                  srcset=""
+                />
+              </li>
+              <li>
+                <img
+                  className="w-12 object-contain h-auto"
+                  src={visa}
+                  alt=""
+                  srcset=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div className="flex-1">
+            <SocialLinks classNameul="md:justify-end justify-center" classNameli="bg-white"></SocialLinks>
+          </div>
         </div>
       </div>
     </div>
