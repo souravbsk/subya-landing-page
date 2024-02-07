@@ -1,5 +1,5 @@
 import React from "react";
-import alisha from "../../assets/Teams/alisha.jpg";
+import alisha from "../../assets/Teams/alisha.png";
 import sasank from "../../assets/Teams/sasank.jpg";
 import TeamCard from "../TeamCard/TeamCard";
 const TeamsTab = () => {

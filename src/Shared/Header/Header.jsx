@@ -4,7 +4,6 @@ import { FaBars, FaSearch } from "react-icons/fa";
 import blacklogo from "../../assets/shabasa-logo.svg";
 import NavSideBar from "../NavSideBar/NavSideBar";
 import { MdOutlineClose } from "react-icons/md";
-import { Link as AnchorLink } from "react-scroll";
 import { SideBarContext } from "../../Context/SideBarProvider";
 
 const Header = () => {
@@ -24,7 +23,7 @@ const Header = () => {
               />
             </Link>
             <button
-              onClick={() => setNavShow(!isNavShow)}
+              onClick={(e) => setNavShow(!isNavShow)}
               className="md:hidden block"
             >
               {isNavShow ? (
@@ -41,78 +40,59 @@ const Header = () => {
             }`}
           >
             <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
-              <AnchorLink
-                offset={-100}
-                spy={true}
-                smooth={true}
-                duration={500}
+              <Link
                 to="/"
                 className="cursor-pointer"
               >
                 Home
-              </AnchorLink>
+              </Link>
             </li>
             <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
-              <AnchorLink
-                offset={500}
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="journey"
+              <Link
+                to="/home/#journey"
                 className="cursor-pointer"
               >
                 Journey
-              </AnchorLink>
+              </Link>
             </li>
             <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
-              <AnchorLink
-                offset={-100}
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="vision"
+              <Link
+
+                to="/home/#vision"
                 className="cursor-pointer"
+                
               >
                 Our Vision
-              </AnchorLink>
+              </Link>
             </li>
 
             {/* highLightlink */}
             <li className="text-[#6D432F]  relative   px-3 md:py-5 py-3  headernavlink bg-center tracking-wide font-anton font-medium leading-7 text-base ">
-              <AnchorLink
-                offset={-100}
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="artisan-wizard"
+              <Link
+                to="/home/#artisan-wizard"
                 className="cursor-pointer"
+                
               >
                 Artisans’ Wizard
-              </AnchorLink>
+              </Link>
             </li>
             <li className="text-[#303030]  relative z-50 px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base">
-              <AnchorLink
-                offset={-100}
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="shop"
+              <Link
+                to="/home/#shop"
                 className="cursor-pointer"
+                
               >
                 Shop
-              </AnchorLink>
+              </Link>
             </li>
             <li className="text-[#303030]  relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base">
-              <AnchorLink
-                offset={-100}
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="blog"
+              <Link
+                to="/home/#blog"
                 className="cursor-pointer"
+                
               >
                 Blog
-              </AnchorLink>
+              </Link>
             </li>
           </ul>
         </div>
@@ -120,7 +100,7 @@ const Header = () => {
           <li>
             <button
               className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base "
-              onClick={() => setSideBar(!isSidebar)}
+              onClick={(e) => setSideBar(!isSidebar)}
             >
               <>Contact Us</>
             </button>

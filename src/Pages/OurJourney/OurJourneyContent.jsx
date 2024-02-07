@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const OurJourneyContent = () => {
   return (
     <div className="peraBg">
-      <div className="container space-y-2  py-24   font-oswald">
+      <div className="container space-y-2    font-oswald">
         <p className="leading-8 text-justify">
           In the heart of Orissa, a land celebrated for its mesmerizing arts and
           crafts, the idea of <strong>*Sabhyasha Retail Tech Pvt. Ltd.*</strong>{" "}

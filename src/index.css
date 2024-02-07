@@ -414,3 +414,20 @@ body {
     display: none !important;
   }
 }
+
+#journey{
+  scroll-margin-top: -400px;
+
+}
+#vision{
+  scroll-margin-top: 100px;
+
+}
+#shop{
+  scroll-margin-top: 100px;
+
+}
+#blog{
+  scroll-margin-top: 100px;
+
+}

@@ -16,13 +16,9 @@ const FooterLink = () => {
       <div className="container">
         <ul className="flex md:flex-nowrap  flex-wrap items-center text-white justify-center">
           <li className="mb-2">
-            <Link
-              onClick={() => setSideBar(!isSidebar)}
-              className=" px-3"
-              to="/"
-            >
+            <button onClick={() => setSideBar(!isSidebar)} className=" px-3">
               Contact Us
-            </Link>
+            </button>
           </li>
           <li className="mb-2">
             <Link className=" px-3 border-s" to="/privacy-policy">
@@ -45,17 +41,9 @@ const FooterLink = () => {
             </Link>
           </li>
           <li className="mb-2">
-           
-            <AnchorLink
-              offset={-100}
-              spy={true}
-              smooth={true}
-              duration={500}
-              to="blog"
-              className="cursor-pointer px-3 border-s"
-            >
+            <Link to="/home/#blog" className="cursor-pointer px-3 border-s">
               Blog
-            </AnchorLink>
+            </Link>
           </li>
         </ul>
         <div className="flex flex-col md:flex-row md:mt-8 mt-3 items-center justify-between gap-3">
