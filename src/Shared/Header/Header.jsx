@@ -99,7 +99,7 @@ const Header = () => {
         <ul className="lg:flex hidden items-center gap-6">
           <li>
             <button
-              className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-semibold leading-7 text-base "
+              className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base "
               onClick={(e) => setSideBar(!isSidebar)}
             >
               <>Contact Us</>
