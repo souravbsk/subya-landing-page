@@ -40,11 +40,7 @@ const FooterLink = () => {
               Terms and Conditions
             </Link>
           </li>
-          <li className="mb-2">
-            <Link to="/home/#blog" className="cursor-pointer px-3 border-s">
-              Blog
-            </Link>
-          </li>
+         
         </ul>
         <div className="flex flex-col md:flex-row md:mt-8 mt-3 items-center justify-between gap-3">
           <div className="flex-1">
