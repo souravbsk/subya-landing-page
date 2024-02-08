@@ -2,7 +2,7 @@ import React from "react";
 import BannerSlider from "./BannerSlider";
 import icon from "../../../assets/first-section/icon-img.png";
 import { Link } from "react-router-dom";
-import bgimage from "../../../assets/first-section/bg.jpeg";
+import bgimage from "../../../assets/first-section/bg.webp";
 const SliderHeroSection = () => {
   return (
     <div className="flex flex-col  lg:flex-row justify-between">

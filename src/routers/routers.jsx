@@ -8,6 +8,8 @@ import PrivacyPolicy from "../Shared/Privacy-Policy/PrivacyPolicy";
 import ReturnPolicy from "../Shared/ReturnPolicy/ReturnPolicy";
 import ShippingPolicy from "../Shared/ShippingPolicy/ShippingPolicy";
 import TermConditions from "../Shared/TermConditions/TermConditions";
+import AdminDashboard from "../layout/AdminDashboard";
+import Dashboard from "../Dashboard/Admin/AdminPages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,18 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path:"/admin",
+    element:<AdminDashboard></AdminDashboard>,
+    children:[
+      {
+        path:"/admin/dashboard",
+        element:<Dashboard></Dashboard>
+
+      }
+    ]
+
+  }
 ]);
 
 export default router;
