@@ -10,11 +10,11 @@ const TeamCard = ({ image, title, designation, link, pera }) => {
         className="mb-2 relative  rounded-xl overflow-hidden"
       >
         <img
-          className={`md:h-64 w-full  mx-auto duration-200 group-hover:opacity-30 `}
+          className={`md:h-72 w-full  mx-auto duration-200 group-hover:opacity-30 `}
           src={image}
           alt="alisha"
         />
-        <div className="absolute -bottom-96 group-hover:bottom-0  duration-500 transition-all p-5 text-white bg-[#7A5542]">
+        <div className="absolute text-sm -bottom-96 group-hover:bottom-0  duration-500 transition-all p-5 text-white bg-[#7A5542]">
           <p>{pera}</p>
         </div>
       </div>

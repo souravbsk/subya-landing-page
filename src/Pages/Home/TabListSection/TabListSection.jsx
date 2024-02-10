@@ -11,7 +11,7 @@ const TabListSection = () => {
       <Tabs className="">
         <TabList
           data-aos="zoom-in-down"
-          className=" mb-10 lg:w-6/12 md:w-8/12 w-10/12 mx-auto border-0 text-center flex md:flex-nowrap flex-wrap  items-center justify-center gap-6 md:gap-8"
+          className=" mb-10 lg:w-5/12 md:w-8/12 w-10/12 mx-auto border-0 text-center flex md:flex-nowrap flex-wrap  items-center justify-center gap-6 md:gap-8"
         >
           <Tab className="shadow-2xl w-full my-button mx-auto h-16   text-[#7A5542] font-bold  flex justify-center items-center rounded-lg cursor-pointer relative overflow-hidden">
             Teams
@@ -20,7 +20,7 @@ const TabListSection = () => {
             Awards
           </Tab>
           <Tab className="shadow-2xl w-full my-button mx-auto h-16   text-[#7A5542] font-bold  flex justify-center items-center rounded-lg cursor-pointer relative overflow-hidden">
-            Our Associations
+            Our Association
           </Tab>
         </TabList>
 

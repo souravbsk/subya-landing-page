@@ -1,6 +1,6 @@
 import React from "react";
 import AdminHeader from "../Dashboard/Admin/AdminShared/AdminHeader/AdminHeader";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import blacklogo from "../assets/shabasa-logo.svg";
 import { RiDashboard3Line } from "react-icons/ri";
 import {
@@ -18,9 +18,12 @@ const Dashboard = () => {
     <section>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content">
+        <div className="drawer-content bg-slate-100 ">
           {/* Page content here */}
           <AdminHeader logo={blacklogo}></AdminHeader>
+          <div className="container py-5">
+            <Outlet></Outlet>
+          </div>
         </div>
         <div className="drawer-side">
           <label

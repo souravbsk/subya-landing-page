@@ -15,10 +15,7 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
     setIndex(i.activeIndex);
   };
 
-
   // linear-gradient(rgb(0 0 0 / 33%), rgb(5 4 4 / 47%)),
-
-
 
   return (
     <>
@@ -71,14 +68,16 @@ const SliderComponent = ({ bgimge1, bgimge2, bgimge3, bgimge4 }) => {
               data-aos="fade-up"
               className="capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-3 text-white font-anton  font-semibold text-xl md:text-[55px] sm:text-5xl  "
             >
-              Unlocking e-commerce <br /> for artisans with 
+              Unlocking e-commerce <br /> for artisans with
               <span className="font-extrabold"> ONDC</span>
             </h2>
             <div className="mb-9 mt-6">
-              <Link className="capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-white font-bold md:text-2xl font-anton underline ">
+              <Link
+                to="/artisans-with-ondc"
+                className="capitalize drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-white font-bold md:text-2xl font-anton underline "
+              >
                 Read More
               </Link>
-              
             </div>{" "}
           </div>
         </div>

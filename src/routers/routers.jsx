@@ -10,6 +10,8 @@ import ShippingPolicy from "../Shared/ShippingPolicy/ShippingPolicy";
 import TermConditions from "../Shared/TermConditions/TermConditions";
 import AdminDashboard from "../layout/AdminDashboard";
 import Dashboard from "../Dashboard/Admin/AdminPages/Dashboard/Dashboard";
+import HandloomContent from "../Pages/HandloomContent/HandloomContent";
+import ArtisansWithOndc from "../Pages/ArtisansWithOndc/ArtisansWithOndc";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
         path: "/our-solution",
         element: <OurSolution></OurSolution>,
       },
+      {
+        path:"/indian-handicraft-livelihood",
+        element:<HandloomContent></HandloomContent>
+      },
+      {
+        path:"/artisans-with-ondc",
+        element:<ArtisansWithOndc></ArtisansWithOndc>
+      }
     ],
   },
   {

@@ -1,10 +1,13 @@
 import React from 'react';
+import TrackSlat from './TrackSlat/TrackSlat';
+import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 
 const Dashboard = () => {
     return (
-        <div>
-            <h2>hello world</h2>
-        </div>
+        <section>
+            <SectionTitle title="Dashboard Overview" className="text-left"></SectionTitle>
+            <TrackSlat></TrackSlat>
+        </section>
     );
 };
 

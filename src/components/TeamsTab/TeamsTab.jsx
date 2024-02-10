@@ -20,9 +20,8 @@ const TeamsTab = () => {
         title="Sasank Sekhar Patro"
         designation="Founder & CEO"
         link="https://www.linkedin.com/in/sasankpatro/"
-        pera="Experienced sales and marketing professional with a track record of leading marketing roles in major brands in India."
+        pera="M Com. and IIM Bangalore certified executive with two decades of impactful sales and marketing leadership. Achievements include steering successful campaigns in diverse markets with prominent organizations such as Ramoji Film City, Gati, Big FM, Tech Mahindra, and Centrum Capital."
       ></TeamCard>
-      
     </div>
   );
 };

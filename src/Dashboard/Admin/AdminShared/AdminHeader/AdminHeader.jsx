@@ -5,7 +5,7 @@ import { RiNotification3Fill } from "react-icons/ri";
 const AdminHeader = ({ logo }) => {
   const [isUser, setIsUser] = useState(true);
   return (
-    <header className="bg-[#FFE2DA] flex items-center gap-2 justify-between lg:px-10 px-5 py-6">
+    <header className="bg-[#ffccb3] flex items-center gap-2 justify-between lg:px-10 px-5 py-6">
       <div className="">
         <label
           htmlFor="my-drawer-2"
@@ -51,7 +51,7 @@ const AdminHeader = ({ logo }) => {
                 >
                   
                   <li>
-                    <button className="bg-[#7A5542] text-white px-4 py-2  font-semibold rounded-md">
+                    <button className="bg-[#7A5542] hover:text-[#7A5542] text-white px-4 py-2  font-semibold rounded-md">
                       Log Out
                     </button>
                   </li>
