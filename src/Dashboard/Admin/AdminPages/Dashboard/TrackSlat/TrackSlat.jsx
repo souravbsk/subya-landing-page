@@ -4,7 +4,7 @@ import SlatCard from "../../../../../components/SlatCard/SlatCard";
 
 const TrackSlat = () => {
   return (
-    <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+    <div className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-4">
       <SlatCard
         icon={<FaShoppingCart></FaShoppingCart>}
         title="Total Order"

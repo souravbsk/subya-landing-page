@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AdminHeader from "../Dashboard/Admin/AdminShared/AdminHeader/AdminHeader";
 import { Link, Outlet } from "react-router-dom";
 import blacklogo from "../assets/shabasa-logo.svg";
@@ -12,8 +12,13 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import SubMenu from "../components/SubMenu/SubMenu";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Dashboard = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section>
       <div className="drawer lg:drawer-open">
@@ -39,7 +44,7 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className=" font-semibold text-sm text-[#7A5542]" to="/">
+              <Link className=" font-semibold text-sm text-[#7A5542]" to="/admin/dashboard">
                 <RiDashboard3Line size={20} />
                 Dashboard
               </Link>
@@ -49,8 +54,8 @@ const Dashboard = () => {
               icon={<FaBookOpen size={20} />}
               title="Blogs"
               subLinks={[
-                { to: "/", label: "All Blogs" },
-                { to: "/", label: "All category's" },
+                { to: "/admin/blogs", label: "All Blogs" },
+                { to: "/admin/blogs/categories", label: "All category's" },
               ]}
             />
             <SubMenu

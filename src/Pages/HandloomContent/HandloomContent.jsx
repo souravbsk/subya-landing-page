@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import HandloomPera from "./HandloomPera";
+import { ScrollRestoration } from "react-router-dom";
 
 const HandloomContent = () => {
   return (
@@ -76,6 +77,7 @@ const HandloomContent = () => {
             <HandloomPera text="The handloom and handicraft sector's influence on the livelihoods of 20 crore Indians is profound, intertwining economic sustenance with cultural preservation. As we navigate the evolving landscape of traditional crafts, innovative solutions like Sabhyasha Retail Tech's Artisans' Wizard app illuminate a path toward a brighter, more inclusive future for Indian artisans. By addressing challenges, embracing technology, and fostering collaborative efforts, we can ensure the continued vibrancy of handloom and handicrafts, sustaining livelihoods and cultural legacies for generations to come."></HandloomPera>
           </div>
         </div>
+        <ScrollRestoration />
       </div>
     </section>
   );

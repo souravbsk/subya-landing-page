@@ -3,14 +3,18 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import SocialLinks from "../../components/SocialLinks/SocialLinks";
+import { useDispatch, useSelector } from "react-redux";
+import { setSideBar } from "../../Redux/features/slices/sidebarSlice";
 
-const NavSideBar = ({ isSidebar, setSideBar }) => {
+const NavSideBar = () => {
+  const { isSidebar } = useSelector((state) => state.sidebar);
+  const dispatch = useDispatch();
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY > 90;
       if (scrollCheck !== 0 && isSidebar) {
         setTimeout(() => {
-          setSideBar(false);
+          dispatch(setSideBar(false));
         }, 100);
       }
     });
@@ -18,7 +22,7 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
 
   return (
     <div className="border-l  md:px-14 px-4 pb-9 pt-20">
-      <div className="text-right" onClick={() => setSideBar(false)}>
+      <div className="text-right" onClick={() => dispatch(setSideBar(false))}>
         <button>
           <MdOutlineClose size={26} className="font-bold" />
         </button>
@@ -34,9 +38,10 @@ const NavSideBar = ({ isSidebar, setSideBar }) => {
         <ul className=" space-y-2">
           <li>
             <p>
-              <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong> <br className="md:block hidden" /> 506, G
-              Block, Utkal Vatika, <br className="md:block hidden" /> Jharpada Canal Road, Bhubaneswar –
-              751006
+              <strong>Sabhyasha Retail Tech Pvt. Ltd.</strong>{" "}
+              <br className="md:block hidden" /> 506, G Block, Utkal Vatika,{" "}
+              <br className="md:block hidden" /> Jharpada Canal Road,
+              Bhubaneswar – 751006
             </p>
           </li>
           <li>

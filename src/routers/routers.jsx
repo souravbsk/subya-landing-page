@@ -12,6 +12,11 @@ import AdminDashboard from "../layout/AdminDashboard";
 import Dashboard from "../Dashboard/Admin/AdminPages/Dashboard/Dashboard";
 import HandloomContent from "../Pages/HandloomContent/HandloomContent";
 import ArtisansWithOndc from "../Pages/ArtisansWithOndc/ArtisansWithOndc";
+import AllBlogs from "../Dashboard/Admin/AdminPages/Blogs/AllBlogs/AllBlogs";
+import Categories from "../Dashboard/Admin/AdminPages/Blogs/Categories/Categories";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
+import Auth from "../layout/Auth";
 
 const router = createBrowserRouter([
   {
@@ -55,27 +60,47 @@ const router = createBrowserRouter([
         element: <OurSolution></OurSolution>,
       },
       {
-        path:"/indian-handicraft-livelihood",
-        element:<HandloomContent></HandloomContent>
+        path: "/indian-handicraft-livelihood",
+        element: <HandloomContent></HandloomContent>,
       },
       {
-        path:"/artisans-with-ondc",
-        element:<ArtisansWithOndc></ArtisansWithOndc>
-      }
+        path: "/artisans-with-ondc",
+        element: <ArtisansWithOndc></ArtisansWithOndc>,
+      },
     ],
   },
   {
-    path:"/admin",
-    element:<AdminDashboard></AdminDashboard>,
-    children:[
+    path: "/",
+    element: <Auth></Auth>,
+    children: [
       {
-        path:"/admin/dashboard",
-        element:<Dashboard></Dashboard>
-
-      }
-    ]
-
-  }
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+    ],
+  },
+  {
+    path: "/admin",
+    element: <AdminDashboard></AdminDashboard>,
+    children: [
+      {
+        path: "/admin/dashboard",
+        element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/admin/blogs",
+        element: <AllBlogs></AllBlogs>,
+      },
+      {
+        path: "/admin/blogs/categories",
+        element: <Categories></Categories>,
+      },
+    ],
+  },
 ]);
 
 export default router;

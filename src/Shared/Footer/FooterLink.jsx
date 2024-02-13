@@ -5,18 +5,21 @@ import upi from "../../assets/payment-icons/upi.svg";
 import rupay from "../../assets/payment-icons/rupay.svg";
 import visa from "../../assets/payment-icons/visa.svg";
 import { Link } from "react-router-dom";
-import { SideBarContext } from "../../Context/SideBarProvider";
-import { Link as AnchorLink } from "react-scroll";
+import { useDispatch } from "react-redux";
+import { setSideBar } from "../../Redux/features/slices/sidebarSlice";
 
 const FooterLink = () => {
-  const { isSidebar, setSideBar } = useContext(SideBarContext);
+  const dispatch = useDispatch();
 
   return (
     <div className="backdrop-brightness-75 py-7 mt-12">
       <div className="container">
         <ul className="flex md:flex-nowrap  flex-wrap items-center text-white justify-center">
           <li className="mb-2">
-            <button onClick={() => setSideBar(!isSidebar)} className=" px-3">
+            <button
+              onClick={() => dispatch(setSideBar(true))}
+              className=" px-3"
+            >
               Contact Us
             </button>
           </li>
@@ -40,7 +43,6 @@ const FooterLink = () => {
               Terms and Conditions
             </Link>
           </li>
-         
         </ul>
         <div className="flex flex-col md:flex-row md:mt-8 mt-3 items-center justify-between gap-3">
           <div className="flex-1">

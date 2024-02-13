@@ -4,11 +4,14 @@ import { FaBars, FaSearch } from "react-icons/fa";
 import blacklogo from "../../assets/shabasa-logo.svg";
 import NavSideBar from "../NavSideBar/NavSideBar";
 import { MdOutlineClose } from "react-icons/md";
-import { SideBarContext } from "../../Context/SideBarProvider";
+import { useDispatch, useSelector } from "react-redux";
+import { setSideBar } from "../../Redux/features/slices/sidebarSlice";
 
 const Header = () => {
-  const { isSidebar, setSideBar } = useContext(SideBarContext);
   const [isNavShow, setNavShow] = useState(false);
+  const {isSidebar} = useSelector((state) => state.sidebar);
+  const dispatch = useDispatch();
+
 
   return (
     <header data-aos="fade-down" className="fixed left-0 right-0  top-0 z-50">
@@ -40,57 +43,34 @@ const Header = () => {
             }`}
           >
             <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
-              <Link
-                to="/"
-                className="cursor-pointer"
-              >
+              <Link to="/" className="cursor-pointer">
                 Home
               </Link>
             </li>
             <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
-              <Link
-                to="/home/#journey"
-                className="cursor-pointer"
-              >
+              <Link to="/home/#journey" className="cursor-pointer">
                 Journey
               </Link>
             </li>
             <li className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base ">
-              <Link
-
-                to="/home/#vision"
-                className="cursor-pointer"
-                
-              >
+              <Link to="/home/#vision" className="cursor-pointer">
                 Our Vision
               </Link>
             </li>
 
             {/* highLightlink */}
             <li className="text-[#6D432F]  relative   px-3 md:py-5 py-3  headernavlink bg-center tracking-wide font-anton font-medium leading-7 text-base ">
-              <Link
-                to="/home/#artisan-wizard"
-                className="cursor-pointer"
-                
-              >
+              <Link to="/home/#artisan-wizard" className="cursor-pointer">
                 Artisans’ Wizard
               </Link>
             </li>
             <li className="text-[#303030]  relative z-50 px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base">
-              <Link
-                to="/home/#shop"
-                className="cursor-pointer"
-                
-              >
+              <Link to="/home/#shop" className="cursor-pointer">
                 Shop
               </Link>
             </li>
             <li className="text-[#303030]  relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base">
-              <Link
-                to="/home/#blog"
-                className="cursor-pointer"
-                
-              >
+              <Link to="/home/#blog" className="cursor-pointer">
                 Blog
               </Link>
             </li>
@@ -100,7 +80,7 @@ const Header = () => {
           <li>
             <button
               className="text-[#303030] relative px-3 md:py-5 py-3 headernavlink bg-center  tracking-widest font-anton font-medium leading-7 text-base "
-              onClick={(e) => setSideBar(!isSidebar)}
+              onClick={() => dispatch(setSideBar(true))}
             >
               <>Contact Us</>
             </button>

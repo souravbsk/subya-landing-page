@@ -23,7 +23,7 @@ const associationItems = [
   },
   {
     img: img5,
-    caption: "Incubation Centre of Sri Sri University",
+    caption: "SSUINNOVATION by Sri Sri University",
   },
 ];
 

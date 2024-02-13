@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import OndcContent from "./OndcContent";
 import KeyFeature from "./KeyFeature";
+import { ScrollRestoration } from "react-router-dom";
 
 const ArtisansWithOndc = () => {
   return (
@@ -124,6 +125,8 @@ const ArtisansWithOndc = () => {
             one craft at a time.
           </p>
         </div>
+      <ScrollRestoration />
+
       </div>
     </section>
   );
