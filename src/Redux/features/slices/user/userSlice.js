@@ -53,9 +53,7 @@ export const signInWithGoogle = createAsyncThunk(
 const userSlice = createSlice({
   name: "userSlice",
   initialState,
-  reducers: {
-    setLo,
-  },
+  reducers: {},
   extraReducers: (builder) => {
     //register chain
     builder
