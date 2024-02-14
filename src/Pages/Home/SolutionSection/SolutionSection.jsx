@@ -18,7 +18,8 @@ const SolutionSection = () => {
 
           <SolutionPPtContent></SolutionPPtContent>
           <div data-aos="fade-up" className="text-center mt-6">
-            <Button text="Start Selling Now" className="no-underline"></Button>
+            {/* <Button text="Start Selling Now" className="no-underline"></Button> */}
+            <Button text="Coming Soon" className="no-underline"></Button>
           </div>
         </div>
       </div>

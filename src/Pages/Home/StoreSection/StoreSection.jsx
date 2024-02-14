@@ -10,7 +10,8 @@ const StoreSection = () => {
       <SectionTitle title="Sabhyasha Store"></SectionTitle>
         <ShopProduct></ShopProduct>
         <div data-aos="fade-up" className="text-center">
-          <Button link={"/"} text="Shop Now" className="no-underline"></Button>
+          {/* <Button link={"/"} text="Shop Now" className="no-underline"></Button> */}
+          <Button link={"/"} text="Coming Soon" className="no-underline"></Button>
         </div>
       </div>
     </section>
