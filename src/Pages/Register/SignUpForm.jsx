@@ -1,23 +1,51 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import blacklogo from "../../assets/shabasa-logo.svg";
 import { Link } from "react-router-dom";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Bounce, toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { createUser } from "../../Redux/features/slices/user/userSlice";
 
 const SignUpForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
     watch,
   } = useForm();
   const [isShowPass, setShowPass] = useState(false);
-  const [isConfirmPassShow, setConfirmPassShow] = useState(false);
-
   const password = React.useRef({});
   password.current = watch("password", "");
+  const dispatch = useDispatch();
+  const authUser = useSelector((state) => state?.userSlice)
+
+
+  console.log(authUser.error);
+
+
+  useEffect(() => {
+
+    if(authUser.isError){
+
+      toast.error(authUser?.error, {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "dark",
+        transition: Bounce,
+        })
+
+    }
+
+  },[authUser])
+
+
+
   const onSubmit = (data) => {
     if (!data.terms) {
       toast.error("please accept our terms and condition ", {
@@ -32,11 +60,19 @@ const SignUpForm = () => {
       });
       return;
     }
+
+    dispatch(
+      createUser({
+        email: data?.email,
+        password: data?.password,
+        name: data?.name,
+      })
+    );
     console.log(data);
   };
 
   return (
-    <div className="card py-3 px-7 border-[#7A5542] border flex-1 w-full shadow-2xl backdrop-blur-lg">
+    <div className="card py-3 md:px-7 px-2 border-[#7A5542] border flex-1 w-full shadow-2xl backdrop-blur-lg">
       <figure>
         <Link to="/">
           <img className="w-40" src={blacklogo} alt="" />
@@ -160,7 +196,7 @@ const SignUpForm = () => {
               <span className="label-text">Confirm Password</span>
             </label>
             <input
-              type="password"
+              type={isShowPass ? "text" : "password"}
               {...register("confirmPassword", {
                 required: true,
                 validate: (value) =>
@@ -212,9 +248,9 @@ const SignUpForm = () => {
         <div className="form-control mt-4">
           <button
             type="submit"
-            className="bg-[#7A5542] text-white py-4 px-3 font-semibold rounded-xl text-xl"
+            className="bg-[#7A5542] flex items-center justify-center gap-3 text-white py-3 px-3 font-semibold rounded-xl text-xl"
           >
-            Sign Up
+            Sign Up {authUser.isLoading ? <span className="loading loading-spinner loading-xs"></span> : ""}
           </button>
         </div>
       </form>

@@ -4,7 +4,7 @@ import SignUpForm from './SignUpForm';
 const Register = () => {
     return (
         <div className="hero min-h-screen peraBg">
-      <div className="">
+      <div className="md:w-auto p-2 w-full">
        <SignUpForm></SignUpForm>
       </div>
     </div>

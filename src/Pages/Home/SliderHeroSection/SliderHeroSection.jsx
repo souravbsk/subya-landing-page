@@ -39,7 +39,7 @@ const SliderHeroSection = () => {
             <Link to="#">
               <h2 className="font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-white sm:text-2xl text-xl md:text-4xl font-anton">
                 Support the cause <br className="md:block hidden" />
-                <span className="font-extrabold md:text-5xl">NOW</span>
+                <span className="font-extrabold md:text-5xl underline">NOW</span>
               </h2>
             </Link>
           </div>
