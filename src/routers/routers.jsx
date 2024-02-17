@@ -17,6 +17,7 @@ import Categories from "../Dashboard/Admin/AdminPages/Blogs/Categories/Categorie
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Auth from "../layout/Auth";
+import JoinMovement from "../Pages/JoinMovement/JoinMovement";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home></Home>,
+      },
+      {
+        path: "/support-the-cause",
+        element: <JoinMovement></JoinMovement>,
       },
       {
         path: "/privacy-policy",

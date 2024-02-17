@@ -21,7 +21,10 @@ const SliderHeroSection = () => {
                 className=" sm:text-2xl text-xl md:text-4xl font-anton text-center lg:text-left font-semibold text-[#303030]"
               >
                 Join the movement <br />{" "}
-                <Link className="font-extrabold  underline">
+                <Link
+                  to="/support-the-cause"
+                  className="font-extrabold  underline"
+                >
                   How?
                 </Link>
               </h3>
@@ -39,7 +42,12 @@ const SliderHeroSection = () => {
             <Link to="#">
               <h2 className="font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-white sm:text-2xl text-xl md:text-4xl font-anton">
                 Support the cause <br className="md:block hidden" />
-                <span className="font-extrabold md:text-5xl underline">NOW</span>
+                <Link
+                  to="/support-the-cause"
+                  className="font-extrabold md:text-5xl underline"
+                >
+                  NOW
+                </Link>
               </h2>
             </Link>
           </div>

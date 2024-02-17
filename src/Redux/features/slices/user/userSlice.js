@@ -19,14 +19,19 @@ const initialState = {
 export const createUser = createAsyncThunk(
   "users/createUser",
   async ({ email, password, name }) => {
-    const userCredential = await createUserWithEmailAndPassword(
+    const userData = await createUserWithEmailAndPassword(
       auth,
       email,
       password
     );
     await updateProfile(auth.currentUser, { displayName: name });
-
-    return userCredential.user;
+    const user = {
+      displayName: userData.user.displayName,
+      email: userData.user.email,
+      emailVerified: userData.user.emailVerified,
+      photUrl: userData.user.photoURL,
+    };
+    return user;
   }
 );
 
@@ -35,25 +40,51 @@ export const loginUser = createAsyncThunk(
   "users/loginUser",
   async ({ email, password }) => {
     const userData = await signInWithEmailAndPassword(auth, email, password);
-    return userData?.user;
+    console.log(userData);
+    const user = {
+      displayName: userData.user.displayName,
+      email: userData.user.email,
+      emailVerified: userData.user.emailVerified,
+      photUrl: userData.user.photoURL,
+    };
+    return user;
   }
 );
 
 //logout user
-
 export const signInWithGoogle = createAsyncThunk(
   "users/signInWithGoogle",
   async () => {
     const googleProvider = new GoogleAuthProvider();
     const userData = await signInWithPopup(auth, googleProvider);
-    return userData?.user;
+    console.log(userData.user);
+    const user = {
+      displayName: userData.user.displayName,
+      email: userData.user.email,
+      emailVerified: userData.user.emailVerified,
+      photUrl: userData.user.photoURL,
+    };
+    return user;
   }
 );
 
 const userSlice = createSlice({
   name: "userSlice",
   initialState,
-  reducers: {},
+  reducers: {
+    setUser: (state, { payload }) => {
+      state.user = payload;
+    },
+    setLoading: (state, { payload }) => {
+      state.isLoading = payload;
+    },
+    setLogOut: () => {
+      (state.user = null),
+        (state.isLoading = false),
+        (state.isError = false),
+        (state.error = "");
+    },
+  },
   extraReducers: (builder) => {
     //register chain
     builder

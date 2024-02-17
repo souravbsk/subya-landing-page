@@ -19,16 +19,12 @@ const SignUpForm = () => {
   const password = React.useRef({});
   password.current = watch("password", "");
   const dispatch = useDispatch();
-  const authUser = useSelector((state) => state?.userSlice)
-
+  const authUser = useSelector((state) => state?.userSlice);
 
   console.log(authUser.error);
 
-
   useEffect(() => {
-
-    if(authUser.isError){
-
+    if (authUser.isError) {
       toast.error(authUser?.error, {
         position: "top-right",
         autoClose: 2000,
@@ -38,13 +34,9 @@ const SignUpForm = () => {
         draggable: true,
         theme: "dark",
         transition: Bounce,
-        })
-
+      });
     }
-
-  },[authUser])
-
-
+  }, [authUser]);
 
   const onSubmit = (data) => {
     if (!data.terms) {
@@ -177,7 +169,7 @@ const SignUpForm = () => {
                 onClick={() => setShowPass(!isShowPass)}
                 className="absolute right-3 top-1/2 -translate-y-1/2"
               >
-                {isShowPass ? <FaEyeSlash /> : <FaEye />}
+                {isShowPass ? <FaEye /> : <FaEyeSlash />}
               </button>
             </div>
             {errors.password && errors.password.type === "required" && (
@@ -250,7 +242,12 @@ const SignUpForm = () => {
             type="submit"
             className="bg-[#7A5542] flex items-center justify-center gap-3 text-white py-3 px-3 font-semibold rounded-xl text-xl"
           >
-            Sign Up {authUser.isLoading ? <span className="loading loading-spinner loading-xs"></span> : ""}
+            Sign Up{" "}
+            {authUser.isLoading ? (
+              <span className="loading loading-spinner loading-xs"></span>
+            ) : (
+              ""
+            )}
           </button>
         </div>
       </form>

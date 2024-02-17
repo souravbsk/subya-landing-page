@@ -6,7 +6,7 @@ import LoginForm from "./LoginForm";
 const Login = () => {
   return (
     <div className="hero min-h-screen peraBg">
-      <div className=" md:w-4/12">
+      <div className=" lg:w-4/12 md:w-6/12 sm:w-8/12 w-full">
        <LoginForm></LoginForm>
       </div>
     </div>
