@@ -7,7 +7,7 @@ const JoinMovement = () => {
     <section className="peraBg py-20">
       <div className="container md:w-9/12">
         <div className=" mb-8">
-          <SectionTitle title="Support the Cause: Join the Artisan Empowerment Movement"></SectionTitle>
+          <SectionTitle title="Support the Cause: Join the Artisan Empowerment Movement" className=" text-xl"></SectionTitle>
         </div>
         <div className="space-y-3">
           <p>
@@ -38,13 +38,7 @@ const JoinMovement = () => {
             identify and connect with artisans enhances the reach of the artisan
             empowerment movement.
           </p>
-          <p>
-            NGOs and foundations play a pivotal role by providing direct funding
-            support to Sabhyasha, facilitating the onboarding of more artisans
-            into the e-commerce ecosystem. Collaborating with the network to
-            identify and connect with artisans enhances the reach of the artisan
-            empowerment movement.
-          </p>
+
         </div>
         <JoinForm></JoinForm>
       </div>

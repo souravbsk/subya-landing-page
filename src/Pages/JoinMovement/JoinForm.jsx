@@ -55,10 +55,10 @@ const JoinForm = () => {
       <SectionTitle
         noanimation={true}
         title="Join the movement:"
-        className=" !mb-4"
+        className=" text-xl !mb-4"
       ></SectionTitle>
 
-      <div className="card shrink-0 w-full p-16 shadow-xl bg-base-100">
+      <div className="card shrink-0 w-full md:p-16 shadow-xl bg-base-100">
         <form onSubmit={handleSubmitForm} className="card-body">
           <div className="form-control">
             <label className="label">
